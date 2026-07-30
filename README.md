@@ -77,6 +77,12 @@ Use **"Use this template"** on GitHub to create a new repository, then delete or
 | `tools/` | Scripts backing the root `justfile` recipes |
 | `python/`, `typescript/`, `kotlin/`, `rust/`, `go/`, `cpp/` | Per-language module skeletons |
 
+## Developer Assistant Tool
+
+`dev/` (not yet scaffolded) is planned to hold a polyglot developer-assistant tool for analyzing a repo seeded from this template — dependency/import graph visualization, circular-import detection, and a plugin system for repo-specific extras. The full plan lives in [`moon/roadmaps/developer_tools.md`](moon/roadmaps/developer_tools.md).
+
+> **This roadmap file plans tooling for the template itself, not for your new project.** Once you generate a repository from this template, delete `moon/roadmaps/developer_tools.md` (and `dev/`, once it exists) unless you specifically want to keep building this tool.
+
 ## Program Usage
 
 > **TODO:** Replace this section with real usage instructions once product code is added.
