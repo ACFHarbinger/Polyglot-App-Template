@@ -98,6 +98,16 @@ repos:
         files: ^kotlin/.*\.kt$
         pass_filenames: false
 
+  # ── Java: Maven compile check ────────────────────────────────────────────
+  - repo: local
+    hooks:
+      - id: maven-compile
+        name: mvn compile (java/)
+        language: system
+        entry: bash -c 'cd java && mvn -q -B compile'
+        files: ^java/.*\.java$
+        pass_filenames: false
+
   # ── C++: clang-format ─────────────────────────────────────────────────────
   - repo: local
     hooks:

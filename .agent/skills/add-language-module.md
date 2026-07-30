@@ -1,6 +1,6 @@
 # Skill: Add a New Language Module
 
-Use when a project generated from this template needs a language module beyond the six provided (python, typescript, kotlin, rust, go, cpp).
+Use when a project generated from this template needs a language module beyond the seven provided (python, typescript, kotlin, java, rust, go, cpp).
 
 1. Create `<language>/` at the repo root with, at minimum: the module's dependency manifest, `src/`, `test/`, `benchmark/`, `config/`.
 2. Add a matching rules file at `.agent/rules/<language>.md` and reference it from `.agent/AGENTS.md` §2/§5.

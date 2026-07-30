@@ -5,6 +5,7 @@
 | `python/` | `pyproject.toml` | [uv](https://github.com/astral-sh/uv) |
 | `typescript/` | `package.json` | npm |
 | `kotlin/` | `build.gradle.kts` | Gradle |
+| `java/` | `pom.xml` | Maven |
 | `rust/` | `Cargo.toml` | Cargo |
 | `go/` | `go.mod` | Go modules |
 | `cpp/` | `CMakeLists.txt` | CMake (+ vcpkg/Conan as needed) |

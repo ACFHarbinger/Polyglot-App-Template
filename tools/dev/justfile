@@ -8,6 +8,7 @@ setup:
     cd python && uv sync --all-extras --dev
     cd typescript && npm ci
     cd kotlin && ./gradlew --version
+    cd java && mvn -q -B dependency:go-offline
     cd rust && cargo fetch
     cd go && go mod download
     pip install pre-commit || true
@@ -33,4 +34,5 @@ clean:
     rm -rf rust/target
     rm -rf go/bin
     rm -rf kotlin/build
+    rm -rf java/target
     rm -rf cpp/build

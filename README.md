@@ -23,6 +23,7 @@
 <a href="https://www.python.org/"><img alt="Python" src="https://img.shields.io/badge/Python-3.11+-3776ab?logo=python&logoColor=white"></a>
 <a href="https://www.typescriptlang.org/"><img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript&logoColor=white"></a>
 <a href="https://kotlinlang.org/"><img alt="Kotlin" src="https://img.shields.io/badge/Kotlin-7F52FF?logo=kotlin&logoColor=white"></a>
+<a href="https://www.java.com/"><img alt="Java" src="https://img.shields.io/badge/Java-21-ED8B00?logo=openjdk&logoColor=white"></a>
 <a href="https://www.rust-lang.org/"><img alt="Rust" src="https://img.shields.io/badge/Rust-1.80%2B-000000?logo=rust&logoColor=white"></a>
 <a href="https://go.dev/"><img alt="Go" src="https://img.shields.io/badge/Go-1.22+-00ADD8?logo=go&logoColor=white"></a>
 <a href="https://isocpp.org/"><img alt="C++" src="https://img.shields.io/badge/C%2B%2B-17-00599C?logo=cplusplus&logoColor=white"></a>
@@ -31,6 +32,7 @@
 
 <a href="https://cmake.org/"><img alt="CMake" src="https://img.shields.io/badge/CMake-Build-064F8C?logo=cmake&logoColor=white"></a>
 <a href="https://gradle.org/"><img alt="Gradle" src="https://img.shields.io/badge/Gradle-Build-02303A?logo=gradle&logoColor=white"></a>
+<a href="https://maven.apache.org/"><img alt="Maven" src="https://img.shields.io/badge/Maven-Build-C71A36?logo=apachemaven&logoColor=white"></a>
 <a href="https://doc.rust-lang.org/cargo/"><img alt="Cargo" src="https://img.shields.io/badge/Cargo-E57300?logo=rust&logoColor=white"></a>
 <a href="https://docs.npmjs.com/cli/v10/using-npm/workspaces"><img alt="NPM" src="https://img.shields.io/badge/NPM-Workspaces-CB3837?logo=npm&logoColor=white"></a>
 <a href="https://github.com/astral-sh/uv"><img alt="uv" src="https://img.shields.io/badge/managed%20by-uv-261230.svg"></a>
@@ -57,7 +59,7 @@
 
 ## About
 
-`Dev-Repo-Template` is a GitHub template repository. It ships no product code of its own — instead, it standardizes the scaffolding that every new polyglot project in this org starts from: CI/CD pipelines, documentation tooling, containerized dev environments, pre-commit hooks, LLM coding-agent instructions, and a minimal skeleton for each supported language module (Python, TypeScript, Kotlin, Rust, Go, C++).
+`Dev-Repo-Template` is a GitHub template repository. It ships no product code of its own — instead, it standardizes the scaffolding that every new polyglot project in this org starts from: CI/CD pipelines, documentation tooling, containerized dev environments, pre-commit hooks, LLM coding-agent instructions, and a minimal skeleton for each supported language module (Python, TypeScript, Kotlin, Java, Rust, Go, C++).
 
 Use **"Use this template"** on GitHub to create a new repository, then delete or replace whichever language modules you don't need.
 
@@ -75,7 +77,7 @@ Use **"Use this template"** on GitHub to create a new repository, then delete or
 | `git/` | `CONTRIBUTING.md` and `codecov.yaml` |
 | `moon/` | `ROADMAP.md` and `CHANGELOG.md` |
 | `tools/` | Scripts backing the root `justfile` recipes |
-| `python/`, `typescript/`, `kotlin/`, `rust/`, `go/`, `cpp/` | Per-language module skeletons |
+| `python/`, `typescript/`, `kotlin/`, `java/`, `rust/`, `go/`, `cpp/` | Per-language module skeletons |
 | `gradle/`, `gradlew`, `gradlew.bat`, `build.gradle.kts`, `gradle.properties`, `settings.gradle.kts` | Root Gradle wrapper + multi-project build tying in `kotlin/` |
 
 ## Developer Assistant Tool

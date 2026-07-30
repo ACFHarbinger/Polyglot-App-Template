@@ -13,6 +13,7 @@
 | `python/` | Python | TODO |
 | `typescript/` | TypeScript | TODO |
 | `kotlin/` | Kotlin | TODO |
+| `java/` | Java | TODO |
 | `rust/` | Rust | TODO |
 | `go/` | Go | TODO |
 | `cpp/` | C++ | TODO |

@@ -3,7 +3,7 @@
 ## Prerequisites
 
 - Git, [`just`](https://github.com/casey/just), `pre-commit`
-- Per-module toolchains: `uv` (Python 3.11+), Node 22 (TypeScript), JDK 21 + Gradle wrapper (Kotlin), stable Rust (Cargo), Go 1.22+, CMake + a C++17 compiler
+- Per-module toolchains: `uv` (Python 3.11+), Node 22 (TypeScript), JDK 21 + Gradle wrapper (Kotlin), JDK 21 + Maven (Java), stable Rust (Cargo), Go 1.22+, CMake + a C++17 compiler
 
 ## Local Setup
 
@@ -18,7 +18,7 @@ just --list
 ## Running a Single Module
 
 ```bash
-just test python       # or typescript, kotlin, rust, go, cpp
+just test python       # or typescript, kotlin, java, rust, go, cpp
 just lint python
 ```
 

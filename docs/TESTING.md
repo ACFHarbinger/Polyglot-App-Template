@@ -7,6 +7,7 @@ Each language module owns its own test suite under `<module>/test/` (or `tests/`
 | `python/` | pytest | `uv run pytest test -v --cov=src` |
 | `typescript/` | Vitest + Testing Library | `npm test` |
 | `kotlin/` | JUnit 5 + Kotest | `./gradlew test` |
+| `java/` | JUnit 5 | `mvn test` |
 | `rust/` | built-in `cargo test` | `cargo test` |
 | `go/` | built-in `testing` | `go test ./...` |
 | `cpp/` | GoogleTest via CTest | `ctest --test-dir build --output-on-failure` |

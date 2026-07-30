@@ -30,7 +30,7 @@ Status markers: ✅ Done · 🚧 In Progress · 📋 Pending
 | T8 | `desktop/` per-OS packaging scripts | S | 📋 Pending |
 | T9 | `.devcontainer/` Dev Container definition | S | 📋 Pending |
 | T10 | `env/` Conda/pip environment definitions | S | 📋 Pending |
-| T11 | Six language module skeletons (python, typescript, kotlin, rust, go, cpp) | L | 📋 Pending |
+| T11 | Language module skeletons (python, typescript, kotlin, java, rust, go, cpp) | L | ✅ Done |
 | T12 | `python/validation/` merged dev-tooling from source repos | M | 📋 Pending |
 | T13 | Root workspace orchestrator files (`pyproject.toml`, `package.json`, `Cargo.toml`, `go.work`, `settings.gradle.kts`) | S | ✅ Done |
 | T14 | `dev/` developer assistant tool — see [`moon/roadmaps/developer_tools.md`](roadmaps/developer_tools.md) (template-meta, delete on adoption) | XL | 📋 Pending |

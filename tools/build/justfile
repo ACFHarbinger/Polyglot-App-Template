@@ -3,7 +3,7 @@
 set shell := ["bash", "-c"]
 
 # Build all modules
-all: python typescript kotlin rust go cpp
+all: python typescript kotlin java rust go cpp
 
 python:
     cd python && uv build
@@ -13,6 +13,9 @@ typescript:
 
 kotlin:
     cd kotlin && ./gradlew build
+
+java:
+    cd java && mvn -B package
 
 rust:
     cd rust && cargo build --release
