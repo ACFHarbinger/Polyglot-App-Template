@@ -76,6 +76,7 @@ Use **"Use this template"** on GitHub to create a new repository, then delete or
 | `moon/` | `ROADMAP.md` and `CHANGELOG.md` |
 | `tools/` | Scripts backing the root `justfile` recipes |
 | `python/`, `typescript/`, `kotlin/`, `rust/`, `go/`, `cpp/` | Per-language module skeletons |
+| `gradle/`, `gradlew`, `gradlew.bat`, `build.gradle.kts`, `gradle.properties`, `settings.gradle.kts` | Root Gradle wrapper + multi-project build tying in `kotlin/` |
 
 ## Developer Assistant Tool
 
