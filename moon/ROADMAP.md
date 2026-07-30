@@ -34,6 +34,7 @@ Status markers: ✅ Done · 🚧 In Progress · 📋 Pending
 | T12 | `python/validation/` merged dev-tooling from source repos | M | 📋 Pending |
 | T13 | Root workspace orchestrator files (`pyproject.toml`, `package.json`, `Cargo.toml`, `go.work`, `settings.gradle.kts`) | S | ✅ Done |
 | T14 | `dev/` developer assistant tool — see [`moon/roadmaps/developer_tools.md`](roadmaps/developer_tools.md) (template-meta, delete on adoption) | XL | 📋 Pending |
+| T15 | `github/` + `.github/workflows/agent_sync.yml` — Project (V2) backlog automation (ported from Visual-Graph-Programming) | M | ✅ Done |
 
 ## Track: Post-Template Adoption
 
