@@ -1,6 +1,6 @@
-# WSmart-Route Documentation
+# Project Documentation
 
-Welcome to the documentation for **WSmart-Route**. This project implements advanced Combinatorial Optimization algorithms using Reinforcement Learning and Operations Research.
+Welcome to the documentation for **this project**. Replace this paragraph with a short description of what the project does.
 
 ```{toctree}
 :maxdepth: 2
@@ -68,10 +68,10 @@ myst_enable_extensions = [
 
 ## 3. Architecture Overview
 
-Below is the automated class hierarchy for the routing engine. Click on any class to jump to its API documentation.
+Below is the automated class hierarchy for the module. Click on any class to jump to its API documentation.
 
 ::: {uml}
-:classes: ../../src/wsmart_route/logic
+:classes: ../../src
 :members:
 :exclude: InternalHelper
 :::
