@@ -80,20 +80,22 @@ Adapts Image-Toolkit's `ToolTabBase` pattern: a plugin registers `(name, callabl
 
 ## 6. Milestones
 
-| # | Item | Effort | Status |
-| --- | --- | --- | --- |
-| D1 | Define `input/protobuf/` schema: `CodeGraph`, `Node`, `Edge`, `Diagnostic`, `ParseRequest`/`ParseResponse` | M | 📋 Pending |
-| D2 | Scaffold `dev/` directory tree, per-language `input/` stubs emitting a minimal node list | M | 📋 Pending |
-| D3 | `core/`: multi-source graph merge, layer classification + forbidden-direction violations (ported from Build-Optimization/WSmart-Route `DEFAULT_LAYERS`/`FORBIDDEN_DIRECTIONS`) | M | 📋 Pending |
-| D4 | `core/`: circular-dependency detection via Tarjan's SCC (ported from Image-Toolkit `check_circular_imports.py`) | S | 📋 Pending |
-| D5 | `output/html/`: static pyvis/vis.js-style report + Jinja2 UML node/edge panels (ported from Build-Optimization/WSmart-Route `html/` templates), CI-usable exit codes | M | 📋 Pending |
-| D6 | `output/app/`: Tauri + React shell, React Flow rendering for small graphs | L | 📋 Pending |
-| D7 | `output/app/`: Cosmograph (cosmos.gl) large-graph rendering + sigma.js fallback, semantic zoom levels (module → file → class/function), per Visual-Graph-Programming's roadmap | L | 📋 Pending |
-| D8 | Plugin registry (`ToolTabBase`-equivalent) + lazy-import discipline for headless mode | M | 📋 Pending |
-| D9 | `input/python/`, `input/typescript/`, `input/kotlin/`, `input/rust/`, `input/go/`, `input/cpp/`: real per-language parsers (start with import/dependency edges only; call graphs and dataflow are stretch) | XL | 📋 Pending |
-| D10 | Reference plugin: generic-ized image/video diff panel ported from Image-Toolkit's `evaluation/` inspector, as a worked example of a repo-specific extension | M | 📋 Pending |
-| D11 | Wire into root `justfile` (`just dev report`, `just dev app`, `just dev check` for CI) and `.github/workflows/` | S | 📋 Pending |
-| D12 | `dev/README.md` onboarding + editor settings recommendation (from nglab's `code_quality.md` Developer Experience wishlist) | S | 📋 Pending |
+Tracked live on [Project 16 — "Developer Assistant Application"](https://github.com/users/ACFHarbinger/projects/16/); each row links to its GitHub issue.
+
+| # | Item | Effort | Status | Issue |
+| --- | --- | --- | --- | --- |
+| D1 | Define `input/protobuf/` schema: `CodeGraph`, `Node`, `Edge`, `Diagnostic`, `ParseRequest`/`ParseResponse` | M | 📋 Pending | [#18](https://github.com/ACFHarbinger/Dev-Repo-Template/issues/18) |
+| D2 | Scaffold `dev/` directory tree, per-language `input/` stubs emitting a minimal node list | M | 📋 Pending | [#19](https://github.com/ACFHarbinger/Dev-Repo-Template/issues/19) |
+| D3 | `core/`: multi-source graph merge, layer classification + forbidden-direction violations (ported from Build-Optimization/WSmart-Route `DEFAULT_LAYERS`/`FORBIDDEN_DIRECTIONS`) | M | 📋 Pending | [#20](https://github.com/ACFHarbinger/Dev-Repo-Template/issues/20) |
+| D4 | `core/`: circular-dependency detection via Tarjan's SCC (ported from Image-Toolkit `check_circular_imports.py`) | S | 📋 Pending | [#21](https://github.com/ACFHarbinger/Dev-Repo-Template/issues/21) |
+| D5 | `output/html/`: static pyvis/vis.js-style report + Jinja2 UML node/edge panels (ported from Build-Optimization/WSmart-Route `html/` templates), CI-usable exit codes | M | 📋 Pending | [#22](https://github.com/ACFHarbinger/Dev-Repo-Template/issues/22) |
+| D6 | `output/app/`: Tauri + React shell, React Flow rendering for small graphs | L | 📋 Pending | [#23](https://github.com/ACFHarbinger/Dev-Repo-Template/issues/23) |
+| D7 | `output/app/`: Cosmograph (cosmos.gl) large-graph rendering + sigma.js fallback, semantic zoom levels (module → file → class/function), per Visual-Graph-Programming's roadmap | L | 📋 Pending | [#24](https://github.com/ACFHarbinger/Dev-Repo-Template/issues/24) |
+| D8 | Plugin registry (`ToolTabBase`-equivalent) + lazy-import discipline for headless mode | M | 📋 Pending | [#25](https://github.com/ACFHarbinger/Dev-Repo-Template/issues/25) |
+| D9 | `input/python/`, `input/typescript/`, `input/kotlin/`, `input/rust/`, `input/go/`, `input/cpp/`: real per-language parsers (start with import/dependency edges only; call graphs and dataflow are stretch) | XL | 📋 Pending | [#26](https://github.com/ACFHarbinger/Dev-Repo-Template/issues/26) |
+| D10 | Reference plugin: generic-ized image/video diff panel ported from Image-Toolkit's `evaluation/` inspector, as a worked example of a repo-specific extension | M | 📋 Pending | [#27](https://github.com/ACFHarbinger/Dev-Repo-Template/issues/27) |
+| D11 | Wire into root `justfile` (`just dev report`, `just dev app`, `just dev check` for CI) and `.github/workflows/` | S | 📋 Pending | [#28](https://github.com/ACFHarbinger/Dev-Repo-Template/issues/28) |
+| D12 | `dev/README.md` onboarding + editor settings recommendation (from nglab's `code_quality.md` Developer Experience wishlist) | S | 📋 Pending | [#29](https://github.com/ACFHarbinger/Dev-Repo-Template/issues/29) |
 
 ## 7. Open questions for implementation time
 
