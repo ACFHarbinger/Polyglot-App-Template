@@ -10,14 +10,14 @@ set unstable := true
 
 # --- Sub-module declarations (imported from tools/) ---
 
-mod helper "tools/helper/justfile"
-mod dev    "tools/dev/justfile"
-mod build  "tools/build/justfile"
-mod test   "tools/test/justfile"
-mod lint   "tools/lint/justfile"
-mod docs   "tools/docs/justfile"
-mod bench  "tools/bench/justfile"
-mod ci     "tools/ci/justfile"
+mod helper     "tools/helper/justfile"
+mod dev        "tools/dev/justfile"
+mod build      "tools/build/justfile"
+mod test       "tools/test/justfile"
+mod validation "tools/validation/justfile"
+mod docs       "tools/docs/justfile"
+mod bench      "tools/bench/justfile"
+mod ci         "tools/ci/justfile"
 
 # --- Default target ---
 
@@ -57,11 +57,11 @@ build:
 test:
     @just test::all
 
-# --- Lint (→ tools/lint) ---
+# --- Validation (→ tools/validation) ---
 
 # Run every language module's linters
 lint:
-    @just lint::all
+    @just validation::all
 
 # --- Docs (→ tools/docs) ---
 

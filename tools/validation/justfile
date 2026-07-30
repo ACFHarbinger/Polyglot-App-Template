@@ -1,4 +1,4 @@
-# tools/lint — run every language module's linters/formatters.
+# tools/validation — run every language module's linters/formatters.
 
 set shell := ["bash", "-c"]
 
