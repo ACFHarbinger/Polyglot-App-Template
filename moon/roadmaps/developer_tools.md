@@ -2,9 +2,9 @@
 
 > **⚠️ Template-meta content — delete on adoption.** This roadmap plans a tool for *this template repository's own tooling ecosystem*, not for a product built from the template. When you use **"Use this template"** to start a real project, delete this file (and, once built, the `dev/` directory it describes) unless your new project specifically wants to keep maintaining it. See the note in [`README.md`](../../README.md#developer-assistant-tool).
 
-> **Version**: 0.1 (planning only — no implementation yet)
+> **Version**: 0.2
 > **Date**: 2026-07-31
-> **Status**: 📋 Pending — roadmap accepted, `dev/` not yet scaffolded
+> **Status**: 🚧 In Progress — `dev/` scaffolded, D1–D5 implemented and tested (13 passing pytest cases)
 
 Status markers: ✅ Done · 🚧 In Progress · 📋 Pending
 
@@ -84,11 +84,11 @@ Tracked live on [Project 16 — "Developer Assistant Application"](https://githu
 
 | # | Item | Effort | Status | Issue |
 | --- | --- | --- | --- | --- |
-| D1 | Define `input/protobuf/` schema: `CodeGraph`, `Node`, `Edge`, `Diagnostic`, `ParseRequest`/`ParseResponse` | M | 📋 Pending | [#18](https://github.com/ACFHarbinger/Dev-Repo-Template/issues/18) |
-| D2 | Scaffold `dev/` directory tree, per-language `input/` stubs emitting a minimal node list | M | 📋 Pending | [#19](https://github.com/ACFHarbinger/Dev-Repo-Template/issues/19) |
-| D3 | `core/`: multi-source graph merge, layer classification + forbidden-direction violations (ported from Build-Optimization/WSmart-Route `DEFAULT_LAYERS`/`FORBIDDEN_DIRECTIONS`) | M | 📋 Pending | [#20](https://github.com/ACFHarbinger/Dev-Repo-Template/issues/20) |
-| D4 | `core/`: circular-dependency detection via Tarjan's SCC (ported from Image-Toolkit `check_circular_imports.py`) | S | 📋 Pending | [#21](https://github.com/ACFHarbinger/Dev-Repo-Template/issues/21) |
-| D5 | `output/html/`: static pyvis/vis.js-style report + Jinja2 UML node/edge panels (ported from Build-Optimization/WSmart-Route `html/` templates), CI-usable exit codes | M | 📋 Pending | [#22](https://github.com/ACFHarbinger/Dev-Repo-Template/issues/22) |
+| D1 | Define `input/protobuf/` schema: `CodeGraph`, `Node`, `Edge`, `Diagnostic`, `ParseRequest`/`ParseResponse` | M | ✅ Done | [#18](https://github.com/ACFHarbinger/Dev-Repo-Template/issues/18) |
+| D2 | Scaffold `dev/` directory tree, per-language `input/` stubs emitting a minimal node list | M | ✅ Done | [#19](https://github.com/ACFHarbinger/Dev-Repo-Template/issues/19) |
+| D3 | `core/`: multi-source graph merge, layer classification + forbidden-direction violations (ported from Build-Optimization/WSmart-Route `DEFAULT_LAYERS`/`FORBIDDEN_DIRECTIONS`) | M | ✅ Done | [#20](https://github.com/ACFHarbinger/Dev-Repo-Template/issues/20) |
+| D4 | `core/`: circular-dependency detection via Tarjan's SCC (ported from Image-Toolkit `check_circular_imports.py`) | S | ✅ Done | [#21](https://github.com/ACFHarbinger/Dev-Repo-Template/issues/21) |
+| D5 | `output/html/`: static pyvis/vis.js-style report + Jinja2 UML node/edge panels (ported from Build-Optimization/WSmart-Route `html/` templates), CI-usable exit codes | M | ✅ Done | [#22](https://github.com/ACFHarbinger/Dev-Repo-Template/issues/22) |
 | D6 | `output/app/`: Tauri + React shell, React Flow rendering for small graphs | L | 📋 Pending | [#23](https://github.com/ACFHarbinger/Dev-Repo-Template/issues/23) |
 | D7 | `output/app/`: Cosmograph (cosmos.gl) large-graph rendering + sigma.js fallback, semantic zoom levels (module → file → class/function), per Visual-Graph-Programming's roadmap | L | 📋 Pending | [#24](https://github.com/ACFHarbinger/Dev-Repo-Template/issues/24) |
 | D8 | Plugin registry (`ToolTabBase`-equivalent) + lazy-import discipline for headless mode | M | 📋 Pending | [#25](https://github.com/ACFHarbinger/Dev-Repo-Template/issues/25) |
