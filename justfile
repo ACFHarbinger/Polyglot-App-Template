@@ -77,7 +77,7 @@ bench:
 # --- Docker (→ tools/dev) ---
 
 docker-up:
-    docker compose -f docker/docker-compose.yml up --build
+    docker compose -f infra/docker/docker-compose.yml up --build
 
 docker-down:
-    docker compose -f docker/docker-compose.yml down
+    docker compose -f infra/docker/docker-compose.yml down

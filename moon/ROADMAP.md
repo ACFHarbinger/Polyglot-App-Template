@@ -24,7 +24,7 @@ Status markers: ✅ Done · 🚧 In Progress · 📋 Pending
 | T2 | `.github/` CI/CD: workflows, issue/PR templates, dependabot | M | ✅ Done |
 | T3 | `docs/` documentation portal: MkDocs, Sphinx, Structurizr, ADRs | M | ✅ Done |
 | T4 | `moon/` roadmap and changelog | S | 🚧 In Progress |
-| T5 | `docker/` infrastructure: Dockerfile, Compose stack | S | 📋 Pending |
+| T5 | `infra/docker/` infrastructure: Dockerfile, Compose stack | S | 📋 Pending |
 | T6 | `.agent/` LLM coding-agent scaffolding | M | ✅ Done |
 | T7 | `justfile` + `tools/` command runner | M | 📋 Pending |
 | T8 | `desktop/` per-OS packaging scripts | S | 📋 Pending |

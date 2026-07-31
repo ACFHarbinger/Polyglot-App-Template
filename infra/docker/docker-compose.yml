@@ -1,7 +1,7 @@
 # Example local stack: app service + PostgreSQL + Redis.
 #
 # Usage (from the repo root):
-#   docker compose -f docker/docker-compose.yml up --build
+#   docker compose -f infra/docker/docker-compose.yml up --build
 
 services:
   db:
@@ -35,7 +35,7 @@ services:
   app:
     build:
       context: ..
-      dockerfile: docker/Dockerfile
+      dockerfile: infra/docker/Dockerfile
     environment:
       DB_HOST: db
       DB_PORT: "5432"
