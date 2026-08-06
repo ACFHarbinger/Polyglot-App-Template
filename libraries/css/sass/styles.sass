@@ -1,0 +1,21 @@
+// libraries/css/sass/styles.sass
+
+$primary-color: #6366f1
+$text-color: #1e293b
+
+=card-base($bg)
+  background-color: $bg
+  padding: 1.5rem
+  border-radius: 6px
+
+.sass-container
+  +card-base(#f8fafc)
+  border: 1px solid #e2e8f0
+
+  h3
+    color: $primary-color
+    margin: 0 0 10px 0
+
+  p
+    color: $text-color
+    line-height: 1.5
