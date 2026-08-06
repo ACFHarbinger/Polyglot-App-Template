@@ -9,7 +9,7 @@ plugins {
 }
 
 allprojects {
-    group = "com.example.dev-repo-template"
+    group = "com.example.polyglot-app-template"
     version = "0.1.0"
 
     repositories {

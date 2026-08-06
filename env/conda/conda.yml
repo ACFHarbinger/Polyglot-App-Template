@@ -1,4 +1,4 @@
-name: dev-repo-template
+name: polyglot-app-template
 channels:
   - conda-forge
   - defaults

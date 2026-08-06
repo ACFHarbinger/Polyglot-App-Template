@@ -7,7 +7,7 @@ func TestGreet(t *testing.T) {
 		name string
 		want string
 	}{
-		{"Dev-Repo-Template", "Hello, Dev-Repo-Template!"},
+		{"Polyglot-App-Template", "Hello, Polyglot-App-Template!"},
 		{"world", "Hello, world!"},
 	}
 

@@ -1,4 +1,4 @@
-//! Dev-Repo-Template Rust module.
+//! Polyglot-App-Template Rust module.
 
 /// Returns a greeting for `name`.
 pub fn greet(name: &str) -> String {
@@ -11,7 +11,7 @@ mod tests {
 
     #[test]
     fn greet_returns_expected_message() {
-        assert_eq!(greet("Dev-Repo-Template"), "Hello, Dev-Repo-Template!");
+        assert_eq!(greet("Polyglot-App-Template"), "Hello, Polyglot-App-Template!");
     }
 
     #[test]

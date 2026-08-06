@@ -18,7 +18,7 @@ Design goals:
 
 Usage:
     python github/scripts/sync_backlog.py --repo-owner ACFHarbinger \\
-        --repo-name Dev-Repo-Template --project-id PVT_kwxxxx
+        --repo-name Polyglot-App-Template --project-id PVT_kwxxxx
 
 Environment:
     GITHUB_TOKEN: token with repo + project scopes.

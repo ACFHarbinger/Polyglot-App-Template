@@ -1,22 +1,22 @@
 <div align="center">
 
-# Dev-Repo-Template
+# Polyglot-App-Template
 
 **A batteries-included GitHub template repository — CI/CD, docs, containerization, LLM agent scaffolding, and multi-language module skeletons in one place.**
 
-<a href="https://github.com/ACFHarbinger/Dev-Repo-Template/actions/workflows/ci.yml"><img alt="CI" src="https://github.com/ACFHarbinger/Dev-Repo-Template/actions/workflows/ci.yml/badge.svg"></a>
-<a href="https://github.com/ACFHarbinger/Dev-Repo-Template/actions/workflows/docs.yml"><img alt="Docs" src="https://github.com/ACFHarbinger/Dev-Repo-Template/actions/workflows/docs.yml/badge.svg"></a>
-<a href="https://github.com/ACFHarbinger/Dev-Repo-Template/actions/workflows/security.yml"><img alt="Security Audit" src="https://github.com/ACFHarbinger/Dev-Repo-Template/actions/workflows/security.yml/badge.svg"></a>
+<a href="https://github.com/ACFHarbinger/Polyglot-App-Template/actions/workflows/ci.yml"><img alt="CI" src="https://github.com/ACFHarbinger/Polyglot-App-Template/actions/workflows/ci.yml/badge.svg"></a>
+<a href="https://github.com/ACFHarbinger/Polyglot-App-Template/actions/workflows/docs.yml"><img alt="Docs" src="https://github.com/ACFHarbinger/Polyglot-App-Template/actions/workflows/docs.yml/badge.svg"></a>
+<a href="https://github.com/ACFHarbinger/Polyglot-App-Template/actions/workflows/security.yml"><img alt="Security Audit" src="https://github.com/ACFHarbinger/Polyglot-App-Template/actions/workflows/security.yml/badge.svg"></a>
 <img alt="PRs Welcome" src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg">
 <a href="https://github.com/astral-sh/ruff"><img alt="Ruff" src="https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json"></a>
 <a href="https://mypy-lang.org/"><img alt="MyPy" src="https://img.shields.io/badge/MyPy-checked-2f4f4f.svg"></a>
 
 </br>
 
-<a href="https://github.com/ACFHarbinger/Dev-Repo-Template/releases"><img alt="Release" src="https://img.shields.io/github/v/release/ACFHarbinger/Dev-Repo-Template?include_prereleases&logo=github&color=blue"></a>
+<a href="https://github.com/ACFHarbinger/Polyglot-App-Template/releases"><img alt="Release" src="https://img.shields.io/github/v/release/ACFHarbinger/Polyglot-App-Template?include_prereleases&logo=github&color=blue"></a>
 <a href="LICENSE.md"><img alt="License" src="https://img.shields.io/badge/License-AGPL_v3-blue.svg"></a>
-<a href="https://github.com/ACFHarbinger/Dev-Repo-Template/issues"><img alt="Open Issues" src="https://img.shields.io/github/issues/ACFHarbinger/Dev-Repo-Template?color=yellow"></a>
-<a href="https://github.com/ACFHarbinger/Dev-Repo-Template/commits/main"><img alt="Last Commit" src="https://img.shields.io/github/last-commit/ACFHarbinger/Dev-Repo-Template?color=blueviolet"></a>
+<a href="https://github.com/ACFHarbinger/Polyglot-App-Template/issues"><img alt="Open Issues" src="https://img.shields.io/github/issues/ACFHarbinger/Polyglot-App-Template?color=yellow"></a>
+<a href="https://github.com/ACFHarbinger/Polyglot-App-Template/commits/main"><img alt="Last Commit" src="https://img.shields.io/github/last-commit/ACFHarbinger/Polyglot-App-Template?color=blueviolet"></a>
 
 </br>
 
@@ -59,7 +59,7 @@
 
 ## About
 
-`Dev-Repo-Template` is a GitHub template repository. It ships no product code of its own — instead, it standardizes the scaffolding that every new polyglot project in this org starts from: CI/CD pipelines, documentation tooling, containerized dev environments, pre-commit hooks, LLM coding-agent instructions, and a minimal skeleton for each supported language module (Python, TypeScript, Kotlin, Java, Rust, Go, C++).
+`Polyglot-App-Template` is a GitHub template repository. It ships no product code of its own — instead, it standardizes the scaffolding that every new polyglot project in this org starts from: CI/CD pipelines, documentation tooling, containerized dev environments, pre-commit hooks, LLM coding-agent instructions, and a minimal skeleton for each supported language module (Python, TypeScript, Kotlin, Java, Rust, Go, C++).
 
 Use **"Use this template"** on GitHub to create a new repository, then delete or replace whichever language modules you don't need.
 

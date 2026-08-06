@@ -1,9 +1,9 @@
-#include "dev_repo_template/greet.hpp"
+#include "polyglot_app_template/greet.hpp"
 
-namespace dev_repo_template {
+namespace polyglot_app_template {
 
 std::string greet(const std::string& name) {
     return "Hello, " + name + "!";
 }
 
-}  // namespace dev_repo_template
+}  // namespace polyglot_app_template

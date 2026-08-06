@@ -1,1 +1,1 @@
-rootProject.name = "dev-repo-template-kotlin"
+rootProject.name = "polyglot-app-template-kotlin"

@@ -1,4 +1,4 @@
-# Dev-Repo-Template Task Automation — Root Justfile
+# Polyglot-App-Template Task Automation — Root Justfile
 # https://github.com/casey/just
 #
 # Recipes are organised into per-domain sub-modules under tools/. Invoke a

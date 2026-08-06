@@ -3,9 +3,9 @@ requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "dev-repo-template-python"
+name = "polyglot-app-template-python"
 version = "0.1.0"
-description = "Python module template for Dev-Repo-Template."
+description = "Python module template for Polyglot-App-Template."
 readme = "README.md"
 license = { file = "../LICENSE.md" }
 requires-python = ">=3.11"

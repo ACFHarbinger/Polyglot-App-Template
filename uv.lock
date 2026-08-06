@@ -8,8 +8,8 @@ resolution-markers = [
 
 [manifest]
 members = [
-    "dev-repo-template",
-    "dev-repo-template-python",
+    "polyglot-app-template",
+    "polyglot-app-template-python",
 ]
 
 [[package]]
@@ -152,12 +152,12 @@ toml = [
 ]
 
 [[package]]
-name = "dev-repo-template"
+name = "polyglot-app-template"
 version = "0.1.0"
 source = { virtual = "." }
 
 [[package]]
-name = "dev-repo-template-python"
+name = "polyglot-app-template-python"
 version = "0.1.0"
 source = { editable = "python" }
 dependencies = [

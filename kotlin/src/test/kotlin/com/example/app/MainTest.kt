@@ -6,7 +6,7 @@ import kotlin.test.assertEquals
 class MainTest {
     @Test
     fun `greet returns expected message`() {
-        assertEquals("Hello, Dev-Repo-Template!", greet("Dev-Repo-Template"))
+        assertEquals("Hello, Polyglot-App-Template!", greet("Polyglot-App-Template"))
     }
 
     @Test

@@ -1,11 +1,11 @@
-#include "dev_repo_template/greet.hpp"
+#include "polyglot_app_template/greet.hpp"
 
 #include <gtest/gtest.h>
 
 TEST(Greet, ReturnsExpectedMessage) {
-    EXPECT_EQ(dev_repo_template::greet("Dev-Repo-Template"), "Hello, Dev-Repo-Template!");
+    EXPECT_EQ(polyglot_app_template::greet("Polyglot-App-Template"), "Hello, Polyglot-App-Template!");
 }
 
 TEST(Greet, HandlesDefaultCase) {
-    EXPECT_EQ(dev_repo_template::greet("world"), "Hello, world!");
+    EXPECT_EQ(polyglot_app_template::greet("world"), "Hello, world!");
 }

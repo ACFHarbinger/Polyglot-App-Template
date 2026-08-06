@@ -1,7 +1,7 @@
 replicaCount: 1
 
 image:
-  repository: dev-repo-template
+  repository: polyglot-app-template
   tag: latest
   pullPolicy: IfNotPresent
 
@@ -12,7 +12,7 @@ service:
 
 ingress:
   enabled: false
-  host: dev-repo-template.example.com
+  host: polyglot-app-template.example.com
 
 resources:
   requests:

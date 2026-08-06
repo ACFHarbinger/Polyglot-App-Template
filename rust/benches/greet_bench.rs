@@ -1,5 +1,5 @@
 use criterion::{black_box, criterion_group, criterion_main, Criterion};
-use dev_repo_template_rust::greet;
+use polyglot_app_template_rust::greet;
 
 fn bench_greet(c: &mut Criterion) {
     c.bench_function("greet", |b| b.iter(|| greet(black_box("world"))));

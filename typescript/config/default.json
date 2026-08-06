@@ -1,6 +1,6 @@
 {
   "app": {
-    "name": "dev-repo-template",
+    "name": "polyglot-app-template",
     "apiBaseUrl": "http://localhost:8000"
   }
 }

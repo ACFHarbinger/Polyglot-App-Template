@@ -1,4 +1,4 @@
-# Dev-Repo-Template Roadmap
+# Polyglot-App-Template Roadmap
 
 [![Python](https://img.shields.io/badge/Python-3.11+-3776ab?logo=python&logoColor=white)](https://www.python.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
@@ -10,7 +10,7 @@
 
 ## Overview
 
-This document tracks planned scaffolding work for `Dev-Repo-Template` itself. Once this template seeds a real project, replace this file's contents with that project's actual roadmap — per-module detail then lives in `docs/moon/roadmaps/<module>.md`. Completed items move to [`docs/moon/CHANGELOG.md`](CHANGELOG.md).
+This document tracks planned scaffolding work for `Polyglot-App-Template` itself. Once this template seeds a real project, replace this file's contents with that project's actual roadmap — per-module detail then lives in `docs/moon/roadmaps/<module>.md`. Completed items move to [`docs/moon/CHANGELOG.md`](CHANGELOG.md).
 
 Status markers: ✅ Done · 🚧 In Progress · 📋 Pending
 

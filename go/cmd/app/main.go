@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/ACFHarbinger/dev-repo-template/go/internal/greet"
+	"github.com/ACFHarbinger/polyglot-app-template/go/internal/greet"
 )
 
 func main() {

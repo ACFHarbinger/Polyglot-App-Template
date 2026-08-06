@@ -1,9 +1,9 @@
 [package]
-name = "dev-repo-template-rust"
+name = "polyglot-app-template-rust"
 version = "0.1.0"
 edition = "2021"
 license = "AGPL-3.0-only"
-description = "Rust module template for Dev-Repo-Template."
+description = "Rust module template for Polyglot-App-Template."
 
 [dependencies]
 

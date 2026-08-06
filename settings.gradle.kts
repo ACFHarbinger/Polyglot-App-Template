@@ -17,6 +17,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "dev-repo-template"
+rootProject.name = "polyglot-app-template"
 
 include(":kotlin")

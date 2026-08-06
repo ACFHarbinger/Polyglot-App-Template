@@ -8,7 +8,7 @@ class MainTest {
 
     @Test
     void greetReturnsExpectedMessage() {
-        assertEquals("Hello, Dev-Repo-Template!", Main.greet("Dev-Repo-Template"));
+        assertEquals("Hello, Polyglot-App-Template!", Main.greet("Polyglot-App-Template"));
     }
 
     @Test

@@ -1,7 +1,7 @@
 [project]
-name = "dev-repo-template"
+name = "polyglot-app-template"
 version = "0.1.0"
-description = "Root workspace manifest for Dev-Repo-Template. The actual Python module lives in python/ (see python/pyproject.toml)."
+description = "Root workspace manifest for Polyglot-App-Template. The actual Python module lives in python/ (see python/pyproject.toml)."
 readme = "README.md"
 license = { file = "LICENSE.md" }
 requires-python = ">=3.11"

@@ -1,9 +1,9 @@
-site_name: Dev-Repo-Template Documentation
+site_name: Polyglot-App-Template Documentation
 site_description: >-
-  Unified documentation portal for repositories generated from Dev-Repo-Template.
+  Unified documentation portal for repositories generated from Polyglot-App-Template.
 site_author: ACFHarbinger
-repo_url: https://github.com/ACFHarbinger/Dev-Repo-Template
-repo_name: ACFHarbinger/Dev-Repo-Template
+repo_url: https://github.com/ACFHarbinger/Polyglot-App-Template
+repo_name: ACFHarbinger/Polyglot-App-Template
 edit_uri: edit/main/docs/
 
 docs_dir: .
