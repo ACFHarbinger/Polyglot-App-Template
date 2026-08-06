@@ -26,6 +26,6 @@
     "vite": "^6.0.0",
     "vitest": "^3.0.0",
     "@testing-library/react": "^16.0.0",
-    "jsdom": "^25.0.0"
+    "jsdom": "^30.0.0"
   }
 }
