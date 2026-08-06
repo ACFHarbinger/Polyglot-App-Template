@@ -8,7 +8,7 @@ description = "Rust module template for Polyglot-App-Template."
 [dependencies]
 
 [dev-dependencies]
-criterion = "0.5"
+criterion = "0.8"
 
 [[bench]]
 name = "greet_bench"
