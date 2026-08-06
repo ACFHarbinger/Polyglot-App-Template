@@ -3,13 +3,16 @@
 set shell := ["bash", "-c"]
 
 # Run all test suites
-all: python typescript kotlin java rust go cpp
+all: python typescript javascript kotlin java rust go cpp
 
 python:
     cd python && uv run pytest test -v
 
 typescript:
     cd typescript && npm test
+
+javascript:
+    cd website/javascript && npm test
 
 kotlin:
     cd kotlin && ./gradlew test
