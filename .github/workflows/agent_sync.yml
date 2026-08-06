@@ -1,7 +1,7 @@
 name: Agent Backlog Sync
 
-# Keeps a GitHub Project (V2) board in sync with moon/ROADMAP.md /
-# moon/CHANGELOG.md by orchestrating github/scripts/sync_backlog.py. Runs on
+# Keeps a GitHub Project (V2) board in sync with docs/moon/ROADMAP.md /
+# docs/moon/CHANGELOG.md by orchestrating github/scripts/sync_backlog.py. Runs on
 # pushes to main that touch either source-of-truth doc, or on demand via
 # workflow_dispatch for maintainers who want to force a resync without a doc
 # edit.
@@ -13,8 +13,8 @@ on:
   push:
     branches: [main]
     paths:
-      - "moon/ROADMAP.md"
-      - "moon/CHANGELOG.md"
+      - "docs/moon/ROADMAP.md"
+      - "docs/moon/CHANGELOG.md"
   workflow_dispatch:
     inputs:
       dry_run:

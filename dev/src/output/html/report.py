@@ -1,5 +1,5 @@
 """Static HTML report generator — the always-available output per
-moon/roadmaps/developer_tools.md D5.
+docs/moon/roadmaps/developer_tools.md D5.
 
 Renders a self-contained HTML file (vis.js loaded from a CDN, no local
 `pyvis` dependency) showing the merged code graph, colored/labeled by layer,

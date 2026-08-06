@@ -76,16 +76,16 @@ Use **"Use this template"** on GitHub to create a new repository, then delete or
 | `env/` | Conda/pip environment definitions |
 | `git/` | `CONTRIBUTING.md` and `codecov.yaml` |
 | `github/` | GitHub Project (V2) automation: `agent_sync.yml`'s scripts, config, and local git hooks |
-| `moon/` | `ROADMAP.md` and `CHANGELOG.md` |
+| `docs/moon/` | `ROADMAP.md` and `CHANGELOG.md` |
 | `tools/` | Scripts backing the root `justfile` recipes |
 | `python/`, `typescript/`, `kotlin/`, `java/`, `rust/`, `go/`, `cpp/` | Per-language module skeletons |
 | `gradle/`, `gradlew`, `gradlew.bat`, `build.gradle.kts`, `gradle.properties`, `settings.gradle.kts` | Root Gradle wrapper + multi-project build tying in `kotlin/` |
 
 ## Developer Assistant Tool
 
-`dev/` (not yet scaffolded) is planned to hold a polyglot developer-assistant tool for analyzing a repo seeded from this template — dependency/import graph visualization, circular-import detection, and a plugin system for repo-specific extras. The full plan lives in [`moon/roadmaps/developer_tools.md`](moon/roadmaps/developer_tools.md).
+`dev/` (not yet scaffolded) is planned to hold a polyglot developer-assistant tool for analyzing a repo seeded from this template — dependency/import graph visualization, circular-import detection, and a plugin system for repo-specific extras. The full plan lives in [`docs/moon/roadmaps/developer_tools.md`](docs/moon/roadmaps/developer_tools.md).
 
-> **This roadmap file plans tooling for the template itself, not for your new project.** Once you generate a repository from this template, delete `moon/roadmaps/developer_tools.md` (and `dev/`, once it exists) unless you specifically want to keep building this tool.
+> **This roadmap file plans tooling for the template itself, not for your new project.** Once you generate a repository from this template, delete `docs/moon/roadmaps/developer_tools.md` (and `dev/`, once it exists) unless you specifically want to keep building this tool.
 
 ## Program Usage
 

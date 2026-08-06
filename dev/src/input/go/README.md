@@ -1,6 +1,6 @@
 # input/go/
 
-Not yet implemented — tracked as part of moon/roadmaps/developer_tools.md D9.
+Not yet implemented — tracked as part of docs/moon/roadmaps/developer_tools.md D9.
 
 Once built, this parser must emit a `CodeGraph` matching
 `dev/src/input/protobuf/codegraph.proto` (see `dev/src/input/python/parser.py`

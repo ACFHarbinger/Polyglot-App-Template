@@ -10,5 +10,5 @@ Welcome to the documentation portal for this repository. This site is built with
 - [Development](DEVELOPMENT.md) — local setup
 - [Testing](TESTING.md) — how to run and write tests
 - [Troubleshooting](TROUBLESHOOTING.md) — common problems and fixes
-- [`moon/ROADMAP.md`](../moon/ROADMAP.md) — what's planned
-- [`moon/CHANGELOG.md`](../moon/CHANGELOG.md) — what shipped
+- [`docs/moon/ROADMAP.md`](docs/moon/ROADMAP.md) — what's planned
+- [`docs/moon/CHANGELOG.md`](docs/moon/CHANGELOG.md) — what shipped

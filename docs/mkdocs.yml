@@ -60,3 +60,5 @@ nav:
   - Troubleshooting: TROUBLESHOOTING.md
   - Glossary: GLOSSARY.md
   - Architecture Decisions: adr/
+  - Roadmap: docs/moon/ROADMAP.md
+  - Changelog: docs/moon/CHANGELOG.md

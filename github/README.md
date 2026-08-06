@@ -23,7 +23,7 @@ export GITHUB_TOKEN="..."        # token with repo + project scopes
 ## CI
 
 `.github/workflows/agent_sync.yml` runs `github/scripts/sync_backlog.py` on
-every push to `moon/ROADMAP.md` or `moon/CHANGELOG.md`, or on demand via
+every push to `docs/moon/ROADMAP.md` or `docs/moon/CHANGELOG.md`, or on demand via
 `workflow_dispatch`. It needs two repository secrets
 (`PROJECT_AUTOMATION_TOKEN`, `GEMINI_API_KEY`) and one repository variable
 (`PROJECT_ID`) configured before it can mutate a live board — until then,

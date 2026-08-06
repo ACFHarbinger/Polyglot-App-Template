@@ -21,8 +21,8 @@ project:
 sync:
   # Files the agent is allowed to read as its source of truth for tickets.
   source_documents:
-    - "moon/ROADMAP.md"
-    - "moon/CHANGELOG.md"
+    - "docs/moon/ROADMAP.md"
+    - "docs/moon/CHANGELOG.md"
   # Directional policy: what happens when the doc and the board disagree.
   conflict_resolution:
     # "doc_wins": overwrite board state from markdown

@@ -4,5 +4,5 @@ contact_links:
     url: https://github.com/ACFHarbinger/Dev-Repo-Template/tree/main/docs
     about: Architecture, development, testing, and troubleshooting guides.
   - name: 🗺️ Roadmap
-    url: https://github.com/ACFHarbinger/Dev-Repo-Template/tree/main/moon
+    url: https://github.com/ACFHarbinger/Dev-Repo-Template/tree/main/docs/moon
     about: Master roadmap and changelog.

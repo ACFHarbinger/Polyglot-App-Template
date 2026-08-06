@@ -2,7 +2,7 @@
 
 Collects one :class:`~dev.src.core.model.CodeGraph` per available
 ``input/<language>`` parser and merges them into a single graph, per
-moon/roadmaps/developer_tools.md D3. Deliberately has no per-language
+docs/moon/roadmaps/developer_tools.md D3. Deliberately has no per-language
 knowledge — it only ever calls :meth:`CodeGraph.merge`, so dropping an
 ``input/<language>/`` submodule costs this module nothing.
 """

@@ -1,6 +1,6 @@
 """Developer-assistant tool CLI — entry point wiring input → core → output.
 
-Per moon/roadmaps/developer_tools.md D11 (partial: wires the pieces built so
+Per docs/moon/roadmaps/developer_tools.md D11 (partial: wires the pieces built so
 far; `just dev` recipes and CI wiring are tracked separately).
 
 Usage:
@@ -44,7 +44,7 @@ def build_graph(root: Path):
 
     Args:
         root: Directory to analyze. Currently only Python sources are
-            parsed (see moon/roadmaps/developer_tools.md D9 for the
+            parsed (see docs/moon/roadmaps/developer_tools.md D9 for the
             remaining languages); this function is the seam where
             additional ``input/<language>`` parsers plug in.
 

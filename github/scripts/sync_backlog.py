@@ -1,6 +1,6 @@
 """Roadmap/Changelog -> GitHub Project (V2) backlog synchronizer.
 
-Parses ``moon/ROADMAP.md`` and ``moon/CHANGELOG.md``, asks Gemini 2.5 Pro to
+Parses ``docs/moon/ROADMAP.md`` and ``docs/moon/CHANGELOG.md``, asks Gemini 2.5 Pro to
 reconcile the described work against the current board snapshot, and applies
 the resulting diff via the ``ProjectV2`` GraphQL API using the primitives in
 :mod:`agent_tools`.
@@ -47,7 +47,7 @@ CONFIG_DIR = REPO_ROOT / "github" / "config"
 
 SYSTEM_PROMPT = """You are a backlog reconciliation agent for a software \
 project's GitHub Project board. You will be given the contents of \
-moon/ROADMAP.md and moon/CHANGELOG.md, plus a JSON snapshot of the current \
+docs/moon/ROADMAP.md and docs/moon/CHANGELOG.md, plus a JSON snapshot of the current \
 board. Return ONLY a JSON object (no prose, no markdown fences) matching \
 this schema:
 

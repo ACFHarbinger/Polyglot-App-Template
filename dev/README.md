@@ -2,9 +2,9 @@
 
 > **Template-meta.** This tool analyzes *this template's own polyglot
 > layout* as a running example. Delete this directory (and
-> `moon/roadmaps/developer_tools.md`) when adopting the template for a real
+> `docs/moon/roadmaps/developer_tools.md`) when adopting the template for a real
 > project, unless you specifically want to keep building it. See
-> [`moon/roadmaps/developer_tools.md`](../moon/roadmaps/developer_tools.md)
+> [`docs/moon/roadmaps/developer_tools.md`](../docs/moon/roadmaps/developer_tools.md)
 > for the full architecture plan and milestone tracker.
 
 A polyglot code-analysis tool: dependency/import-graph visualization,

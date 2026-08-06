@@ -6,7 +6,7 @@ Adapted from the AST-walk approach independently built in three of the
 template's source repos (Build-Optimization/WSmart-Route
 `visualize_module_graph.py`, Image-Toolkit `check_circular_imports.py`),
 consolidated into the dev/src/input/python/ submodule per
-moon/roadmaps/developer_tools.md D9 (Python slice).
+docs/moon/roadmaps/developer_tools.md D9 (Python slice).
 
 Usage:
     python -m dev.src.input.python.parser python/src > graph.json

@@ -1,6 +1,6 @@
 # input/java/
 
-Not yet implemented — tracked as part of moon/roadmaps/developer_tools.md D9
+Not yet implemented — tracked as part of docs/moon/roadmaps/developer_tools.md D9
 (added after the roadmap's original language list; java/ was added to the
 template after developer_tools.md was written).
 

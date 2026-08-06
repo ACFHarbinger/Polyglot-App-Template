@@ -1,4 +1,4 @@
-# Plugin registry for dev/src/plugins/ (see moon/roadmaps/developer_tools.md D8).
+# Plugin registry for dev/src/plugins/ (see docs/moon/roadmaps/developer_tools.md D8).
 # Not yet consumed by any code — dev/src/plugins/ has no registry loader yet.
 # This file documents the intended shape so D8 has a config format to target.
 

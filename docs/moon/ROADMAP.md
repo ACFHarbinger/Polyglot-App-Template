@@ -10,7 +10,7 @@
 
 ## Overview
 
-This document tracks planned scaffolding work for `Dev-Repo-Template` itself. Once this template seeds a real project, replace this file's contents with that project's actual roadmap — per-module detail then lives in `moon/roadmaps/<module>.md`. Completed items move to [`moon/CHANGELOG.md`](CHANGELOG.md).
+This document tracks planned scaffolding work for `Dev-Repo-Template` itself. Once this template seeds a real project, replace this file's contents with that project's actual roadmap — per-module detail then lives in `docs/moon/roadmaps/<module>.md`. Completed items move to [`docs/moon/CHANGELOG.md`](CHANGELOG.md).
 
 Status markers: ✅ Done · 🚧 In Progress · 📋 Pending
 
@@ -34,11 +34,11 @@ Status markers: ✅ Done · 🚧 In Progress · 📋 Pending
 | T11 | Language module skeletons (python, typescript, kotlin, java, rust, go, cpp) | L | ✅ Done |
 | T12 | `python/validation/` merged dev-tooling from source repos | M | 📋 Pending |
 | T13 | Root workspace orchestrator files (`pyproject.toml`, `package.json`, `Cargo.toml`, `go.work`, `settings.gradle.kts`) | S | ✅ Done |
-| T14 | `dev/` developer assistant tool — see [`moon/roadmaps/developer_tools.md`](roadmaps/developer_tools.md) (template-meta, delete on adoption) | XL | 📋 Pending |
+| T14 | `dev/` developer assistant tool — see [`docs/moon/roadmaps/developer_tools.md`](roadmaps/developer_tools.md) (template-meta, delete on adoption) | XL | 📋 Pending |
 | T15 | `github/` + `.github/workflows/agent_sync.yml` — Project (V2) backlog automation (ported from Visual-Graph-Programming) | M | ✅ Done |
 
 ## Track: Post-Template Adoption
 
 > **TODO:** Once a real project is generated from this template, replace this section with that project's actual feature roadmap.
 
-See per-module detail in [`moon/roadmaps/`](roadmaps/).
+See per-module detail in [`docs/moon/roadmaps/`](roadmaps/).

@@ -2,7 +2,7 @@
 // dev/src/core. Every language-specific parser emits a CodeGraph (or streams
 // ParseResponse messages); core never imports language-specific code.
 //
-// See moon/roadmaps/developer_tools.md D1. Generate bindings with, e.g.:
+// See docs/moon/roadmaps/developer_tools.md D1. Generate bindings with, e.g.:
 //   protoc --python_out=. --pyi_out=. dev/src/input/protobuf/codegraph.proto
 //
 // Until per-language codegen is wired up (tracked in D9), dev/src/core/model.py
