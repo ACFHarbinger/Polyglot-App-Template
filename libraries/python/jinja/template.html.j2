@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ page_title }}</title>
+</head>
+<body>
+    <h1>System Status Report</h1>
+    <p>Report Generated At: {{ generated_time }}</p>
+    
+    <h2>Active Modules</h2>
+    <ul>
+    {% for module in modules %}
+        <li><strong>{{ module.name }}</strong> ({{ module.language }}) - Status: {{ module.status }}</li>
+    {% endfor %}
+    </ul>
+</body>
+</html>
