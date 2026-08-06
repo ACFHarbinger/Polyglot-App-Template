@@ -45,6 +45,11 @@
     "entity": "Ngrx-entities",
     "directives": "Vue-directives",
     "directive": "Vue-directives",
+    "builder": "dist",
+    "builders": "dist",
+    "wordpress": "Wordpress",
+    "tabs": "components",
+    "tab": "components",
   },
   "[json]": {
     "editor.defaultFormatter": "vscode.json-language-features",
