@@ -1,0 +1,2 @@
+// env/gradle/settings.gradle
+rootProject.name = 'polyglot-gradle-env'
