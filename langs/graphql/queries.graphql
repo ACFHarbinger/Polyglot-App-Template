@@ -1,0 +1,63 @@
+# langs/graphql/queries.graphql
+# Examples of queries and mutations matching schema.graphql.
+
+# 1. Fetch current user profiles and their order histories
+query GetUserProfile {
+  me {
+    id
+    username
+    email
+    createdAt
+    orders {
+      id
+      status
+      totalAmount
+      createdAt
+      items {
+        product {
+          name
+          price
+        }
+        quantity
+        unitPrice
+      }
+    }
+  }
+}
+
+# 2. Search for products in a specific category
+query SearchProducts($category: String, $limit: Int) {
+  listProducts(category: $category, limit: $limit) {
+    id
+    name
+    description
+    price
+    stockQuantity
+    category {
+      name
+    }
+  }
+}
+
+# 3. Create a new product (Mutation)
+mutation AddNewProduct($name: String!, $price: Float!, $categoryId: ID!) {
+  createProduct(name: $name, price: $price, categoryId: $categoryId) {
+    id
+    name
+    price
+    category {
+      id
+      name
+    }
+  }
+}
+
+# 4. Place a new order
+mutation PlaceNewOrder($userId: ID!, $items: [OrderItemInput!]!) {
+  placeOrder(userId: $userId, items: $items) {
+    id
+    status
+    totalAmount
+    createdAt
+  }
+}

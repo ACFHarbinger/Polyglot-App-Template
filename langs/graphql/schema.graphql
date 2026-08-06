@@ -1,0 +1,66 @@
+# langs/graphql/schema.graphql
+# Sample schema defining types, queries, and mutations.
+
+type User {
+  id: ID!
+  username: String!
+  email: String!
+  orders: [Order!]!
+  createdAt: String!
+}
+
+type Product {
+  id: ID!
+  name: String!
+  description: String
+  price: Float!
+  stockQuantity: Int!
+  category: Category
+}
+
+type Category {
+  id: ID!
+  name: String!
+  products: [Product!]!
+}
+
+type Order {
+  id: ID!
+  user: User!
+  status: OrderStatus!
+  totalAmount: Float!
+  items: [OrderItem!]!
+  createdAt: String!
+}
+
+type OrderItem {
+  id: ID!
+  product: Product!
+  quantity: Int!
+  unitPrice: Float!
+}
+
+enum OrderStatus {
+  PENDING
+  PROCESSING
+  SHIPPED
+  DELIVERED
+  CANCELLED
+}
+
+type Query {
+  getUser(id: ID!): User
+  listProducts(category: String, limit: Int): [Product!]!
+  getOrder(id: ID!): Order
+  me: User
+}
+
+type Mutation {
+  createProduct(name: String!, price: Float!, categoryId: ID!): Product!
+  placeOrder(userId: ID!, items: [OrderItemInput!]!): Order!
+}
+
+input OrderItemInput {
+  productId: ID!
+  quantity: Int!
+}

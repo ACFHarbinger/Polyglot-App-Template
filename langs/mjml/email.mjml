@@ -1,0 +1,52 @@
+<mjml>
+  <mj-head>
+    <mj-title>Welcome to Polyglot Apps</mj-title>
+    <mj-font name="Outfit" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" />
+    <mj-attributes>
+      <mj-all font-family="Outfit, Helvetica, Arial, sans-serif" />
+      <mj-text font-size="16px" color="#1e293b" line-height="24px" />
+      <mj-section background-color="#ffffff" padding="20px" />
+    </mj-attributes>
+    <mj-style>
+      .premium-link { color: #6366f1; text-decoration: none; font-weight: 600; }
+      .gradient-header { background: linear-gradient(135deg, #4f46e5, #06b6d4); }
+    </mj-style>
+  </mj-head>
+  <mj-body background-color="#f8fafc">
+    <!-- Header Section -->
+    <mj-section css-class="gradient-header" padding="40px 20px">
+      <mj-column>
+        <mj-text align="center" color="#ffffff" font-size="28px" font-weight="700" letter-spacing="1px">
+          POLYGLOT APP TEMPLATE
+        </mj-text>
+        <mj-text align="center" color="#e2e8f0" font-size="16px">
+          The Ultimate Scaffolding for Multi-Language Systems
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Main Content Section -->
+    <mj-section padding="30px 20px">
+      <mj-column>
+        <mj-text font-size="20px" font-weight="600" color="#0f172a" padding-bottom="10px">
+          Hi Developer,
+        </mj-text>
+        <mj-text>
+          We are thrilled to welcome you to the org. Your repository was successfully generated using the <a href="#" class="premium-link">Polyglot-App-Template</a>. You now have access to a clean skeleton supporting Python, TypeScript, Java, Kotlin, Rust, Go, C++, and more.
+        </mj-text>
+        <mj-button background-color="#6366f1" color="#ffffff" font-size="16px" font-weight="600" href="https://github.com/ACFHarbinger/Polyglot-App-Template" border-radius="8px" padding-top="20px">
+          Explore the Documentation
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- Footer Section -->
+    <mj-section background-color="#f1f5f9" padding="20px">
+      <mj-column>
+        <mj-text align="center" font-size="12px" color="#64748b">
+          Sent by ACFHarbinger Dev Team. All rights reserved.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>
