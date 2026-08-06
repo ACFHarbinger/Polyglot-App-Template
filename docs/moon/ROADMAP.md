@@ -23,7 +23,7 @@ Status markers: ✅ Done · 🚧 In Progress · 📋 Pending
 | T1 | Root scaffolding: LICENSE, README, .env.example, git config, pre-commit | S | ✅ Done |
 | T2 | `.github/` CI/CD: workflows, issue/PR templates, dependabot | M | ✅ Done |
 | T3 | `docs/` documentation portal: MkDocs, Sphinx, Structurizr, ADRs | M | ✅ Done |
-| T4 | `moon/` roadmap and changelog | S | 🚧 In Progress |
+| T4 | `moon/` roadmap and changelog | S | ✅ Done |
 | T5 | `infra/docker/` infrastructure: Dockerfile, Compose stack | S | ✅ Done |
 | T16 | `infra/{k8s,helm,terraform,ansible}/` — additional infra-as-code scaffolding | M | ✅ Done |
 | T6 | `.agent/` LLM coding-agent scaffolding | M | ✅ Done |
@@ -36,6 +36,7 @@ Status markers: ✅ Done · 🚧 In Progress · 📋 Pending
 | T13 | Root workspace orchestrator files (`pyproject.toml`, `package.json`, `Cargo.toml`, `go.work`, `settings.gradle.kts`) | S | ✅ Done |
 | T14 | `dev/` developer assistant tool — see [`docs/moon/roadmaps/developer_tools.md`](roadmaps/developer_tools.md) (template-meta, delete on adoption) | XL | 📋 Pending |
 | T15 | `github/` + `.github/workflows/agent_sync.yml` — Project (V2) backlog automation (ported from Visual-Graph-Programming) | M | ✅ Done |
+| T17 | Interactive Vue documentation website | M | ✅ Done |
 
 ## Track: Post-Template Adoption
 
