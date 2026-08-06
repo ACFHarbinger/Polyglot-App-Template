@@ -1,0 +1,36 @@
+/* website/css/main.css */
+
+@import "themes/dark.css";
+@import "layouts/grid.css";
+@import "components/buttons.css";
+
+/* Base styles using HSL CSS variables */
+body {
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+  font-family: system-ui, -apple-system, sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: hsl(var(--foreground));
+}
+
+a {
+  color: hsl(var(--primary));
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.card-panel {
+  background-color: hsl(var(--card));
+  border: 1px solid hsl(var(--border));
+  border-radius: 8px;
+  padding: 1.5rem;
+  color: hsl(var(--card-foreground));
+}

@@ -1,0 +1,14 @@
+/* website/css/themes/dark.css */
+
+:root {
+  --background: 220 25% 6%;
+  --foreground: 210 40% 98%;
+  --card: 224 25% 12%;
+  --card-foreground: 210 40% 98%;
+  --border: 215 15% 18%;
+  --primary: 250 84% 65%;
+  --primary-foreground: 210 40% 98%;
+  --accent: 188 86% 53%;
+  --accent-foreground: 220 25% 6%;
+  --muted: 215 15% 50%;
+}
