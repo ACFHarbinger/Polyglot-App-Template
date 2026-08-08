@@ -4,11 +4,11 @@
 # specific (see the note under the "sync" stage below) and has no GitLab job here.
 
 stages:
+    - sync
     - test
     - security
     - docs
     - benchmark
-
 # ==========================================
 # STAGE: TEST (ci.yml)
 # ==========================================
@@ -177,6 +177,6 @@ agent-backlog-sync:
     script:
         - uv run --project git python -c "import json,pathlib; json.loads(pathlib.Path('git/config/project_labels.json').read_text())"
         - uv run --project git python -c "import yaml,pathlib; yaml.safe_load(pathlib.Path('git/config/automation_rules.yaml').read_text())"
-        - uv run --project git python -m git.scripts.sync_backlog --repo-owner ACFHarbinger --repo-name github-pages --project-id "$PROJECT_ID"
+        - uv run --project git python -m git.scripts.sync_backlog --repo-owner ACFHarbinger --repo-name Polyglot-App-Template --project-id "$PROJECT_ID"
     variables:
         GITHUB_TOKEN: $PROJECT_AUTOMATION_TOKEN
