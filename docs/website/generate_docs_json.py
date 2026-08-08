@@ -58,11 +58,11 @@ def main():
                         category = "Welcome"
                     else:
                         category = "Getting Started"
-                elif dir_name == 'moon':
+                elif dir_name.startswith('moon'):
                     category = "Roadmap & Changelog"
-                elif dir_name == 'research':
+                elif dir_name in ['research', 'moon/research']:
                     category = "Research"
-                elif dir_name == 'reports':
+                elif dir_name in ['reports', 'moon/reports']:
                     category = "Reports"
                 elif dir_name == 'adr':
                     category = "Decision Records"

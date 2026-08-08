@@ -30,5 +30,5 @@ Benchmark performance, analyze dependency overhead, assess security implications
 
 ## 3. Documenting Findings
 
-Upon completion, the researcher must compile findings into a research note under `docs/research/` utilizing the `TEMPLATE.md` structure. The research note must be committed to the branch, and a Pull Request opened for review.
+Upon completion, the researcher must compile findings into a research note under `docs/moon/research/` utilizing the `TEMPLATE.md` structure. The research note must be committed to the branch, and a Pull Request opened for review.
 Once the PR is approved and merged, the decisions made should be codified in an [Architectural Decision Record (ADR)](../adr/README.md) if they alter the project's long-term structure or technologies.
