@@ -1,7 +1,7 @@
 """Layer classification and forbidden-direction violation detection.
 
-Ported from the ``DEFAULT_LAYERS``/``FORBIDDEN_DIRECTIONS`` pattern
-independently built in Build-Optimization's and WSmart-Route's
+Implementation of the ``DEFAULT_LAYERS``/``FORBIDDEN_DIRECTIONS`` pattern
+independently built in 's and 's
 ``visualize_module_graph.py`` (see docs/moon/roadmaps/developer_tools.md D3),
 generalized to operate on the shared :class:`~dev.src.core.model.CodeGraph`
 instead of being Python-import-specific.

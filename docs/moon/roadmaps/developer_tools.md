@@ -25,11 +25,11 @@ This plan is a synthesis of tooling that already exists, independently, across t
 
 | Source | What it contributes |
 | --- | --- |
-| `Build-Optimization` (`middleware/validation/visualize_module_graph.py`, `trace_dependencies.py`) | Python `ast`-based import-graph builder, layer classification (`DEFAULT_LAYERS`/`FORBIDDEN_DIRECTIONS`), `pyvis`/vis.js rendering, Jinja2 UML node/edge panel injected into the generated HTML (`_inject_uml_panel`) |
-| `WSmart-Route` (`logic/validation/*`) | Same tool family, plus pattern-externalization (`target/pattern.{html,css,js,sql}` loaded at runtime rather than hardcoded regex) and a second, independent Sphinx-based UML generator (`logic/docs`) |
-| `Image-Toolkit` (`backend/src/utils/validation/check_circular_imports.py`, `backend/benchmark/evaluation/`) | Working Tarjan's-SCC circular-dependency detection wired to `just check-circular-imports`, `import-linter` contracts enforcing layer boundaries in CI, **and** the strongest architectural reference: the `evaluation/` inspector app's `other/`→`logic/`→`ui/`→`plugin/` layering (data layer has zero UI dependency), lazy Qt import via module `__getattr__` (headless mode never pays for the UI import), and the `ToolTabBase` plugin-tab pattern (register `(name, callable)`, base class handles list/cache/render plumbing) |
-| `Visual-Graph-Programming` (`docs/moon/ROADMAP.md` Milestones A/B/D) | The scaling plan for graph rendering: React Flow for small/explicit graphs, **Cosmograph (cosmos.gl, WebGL2)** for 1M+-node graphs paired with DuckDB-WASM filtering, **sigma.js** as a mid-scale fallback, semantic zoom (module → file → class/function), tree-sitter-based code-property-graph extraction, and a config-driven automation-rules pattern (`git/config/automation_rules.yaml`) worth reusing for plugin/rule config |
-| `nglab` (`tools/*/justfile`, `docs/moon/roadmaps/code_quality.md`) | The "thin orchestration layer over per-language external tools" pattern already used throughout this template's own `justfile` + `tools/`, and a Developer Experience wishlist (recommended editor settings, `QUICKSTART.md`, extending pre-commit) worth folding into `dev/`'s own onboarding |
+| `` (`middleware/validation/visualize_module_graph.py`, `trace_dependencies.py`) | Python `ast`-based import-graph builder, layer classification (`DEFAULT_LAYERS`/`FORBIDDEN_DIRECTIONS`), `pyvis`/vis.js rendering, Jinja2 UML node/edge panel injected into the generated HTML (`_inject_uml_panel`) |
+| `` (`logic/validation/*`) | Same tool family, plus pattern-externalization (`target/pattern.{html,css,js,sql}` loaded at runtime rather than hardcoded regex) and a second, independent Sphinx-based UML generator (`logic/docs`) |
+| `` (`backend/src/utils/validation/check_circular_imports.py`, `backend/benchmark/evaluation/`) | Working Tarjan's-SCC circular-dependency detection wired to `just check-circular-imports`, `import-linter` contracts enforcing layer boundaries in CI, **and** the strongest architectural reference: the `evaluation/` inspector app's `other/`→`logic/`→`ui/`→`plugin/` layering (data layer has zero UI dependency), lazy Qt import via module `__getattr__` (headless mode never pays for the UI import), and the `ToolTabBase` plugin-tab pattern (register `(name, callable)`, base class handles list/cache/render plumbing) |
+| `` (`docs/moon/ROADMAP.md` Milestones A/B/D) | The scaling plan for graph rendering: React Flow for small/explicit graphs, **Cosmograph (cosmos.gl, WebGL2)** for 1M+-node graphs paired with DuckDB-WASM filtering, **sigma.js** as a mid-scale fallback, semantic zoom (module → file → class/function), tree-sitter-based code-property-graph extraction, and a config-driven automation-rules pattern (`git/config/automation_rules.yaml`) worth reusing for plugin/rule config |
+| `` (`tools/*/justfile`, `docs/moon/roadmaps/code_quality.md`) | The "thin orchestration layer over per-language external tools" pattern already used throughout this template's own `justfile` + `tools/`, and a Developer Experience wishlist (recommended editor settings, `QUICKSTART.md`, extending pre-commit) worth folding into `dev/`'s own onboarding |
 
 ## 3. Architecture
 
@@ -72,11 +72,11 @@ Each `input/<language>` submodule is written in — and uses the native tooling 
 1. **`input/<language>/` is deletable.** `core/` discovers available parsers at runtime (or via `dev/config/`) and degrades gracefully — a repo with no `cpp/` module just never gets C++ nodes in the graph.
 2. **`output/app/` is deletable.** `output/html/` has no dependency on it; removing the Tauri app loses interactivity, not correctness.
 3. **`plugins/` are additive-only.** A plugin registers into `core/`'s tab/rule registry (see §5); core code never imports a specific plugin by name.
-4. Ports the lazy-import discipline from Image-Toolkit's `evaluation/__init__.py` (`__getattr__`-based deferred import): importing `dev/src/core` for a headless CLI run must never pull in Tauri/React/Qt-equivalent UI dependencies.
+4. Uses a lazy-import discipline from the `evaluation/__init__.py` module (`__getattr__`-based deferred import): importing `dev/src/core` for a headless CLI run must never pull in Tauri/React/Qt-equivalent UI dependencies.
 
 ## 5. Plugin architecture
 
-Adapts Image-Toolkit's `ToolTabBase` pattern: a plugin registers `(name, callable)` pairs into a shared registry; the base class supplies the list UI, result caching, and render plumbing so a plugin author only writes the analysis + a render function. `dev/config/plugins.yaml` enables/disables plugins per consuming repo — this is where a project would, e.g., register an image/video diff panel (a stripped, generic-ized version of Image-Toolkit's `ImagePanel`/pixel-probe tooling) without that code shipping in the core template at all.
+Uses the `ToolTabBase` pattern: a plugin registers `(name, callable)` pairs into a shared registry; the base class supplies the list UI, result caching, and render plumbing so a plugin author only writes the analysis + a render function. `dev/config/plugins.yaml` enables/disables plugins per consuming repo — this is where a project would, e.g., register an image/video diff panel (a stripped, generic-ized version of the `ImagePanel`/pixel-probe tooling) without that code shipping in the core template at all.
 
 ## 6. Milestones
 
@@ -86,16 +86,16 @@ Tracked live on [Project 16 — "Developer Assistant Application"](https://githu
 | --- | --- | --- | --- | --- |
 | D1 | Define `input/protobuf/` schema: `CodeGraph`, `Node`, `Edge`, `Diagnostic`, `ParseRequest`/`ParseResponse` | M | ✅ Done | [#18](https://github.com/ACFHarbinger/Polyglot-App-Template/issues/18) |
 | D2 | Scaffold `dev/` directory tree, per-language `input/` stubs emitting a minimal node list | M | ✅ Done | [#19](https://github.com/ACFHarbinger/Polyglot-App-Template/issues/19) |
-| D3 | `core/`: multi-source graph merge, layer classification + forbidden-direction violations (ported from Build-Optimization/WSmart-Route `DEFAULT_LAYERS`/`FORBIDDEN_DIRECTIONS`) | M | ✅ Done | [#20](https://github.com/ACFHarbinger/Polyglot-App-Template/issues/20) |
-| D4 | `core/`: circular-dependency detection via Tarjan's SCC (ported from Image-Toolkit `check_circular_imports.py`) | S | ✅ Done | [#21](https://github.com/ACFHarbinger/Polyglot-App-Template/issues/21) |
-| D5 | `output/html/`: static pyvis/vis.js-style report + Jinja2 UML node/edge panels (ported from Build-Optimization/WSmart-Route `html/` templates), CI-usable exit codes | M | ✅ Done | [#22](https://github.com/ACFHarbinger/Polyglot-App-Template/issues/22) |
+| D3 | `core/`: multi-source graph merge, layer classification + forbidden-direction violations (using standard `DEFAULT_LAYERS`/`FORBIDDEN_DIRECTIONS`) | M | ✅ Done | [#20](https://github.com/ACFHarbinger/Polyglot-App-Template/issues/20) |
+| D4 | `core/`: circular-dependency detection via Tarjan's SCC (using circular dependency detection) | S | ✅ Done | [#21](https://github.com/ACFHarbinger/Polyglot-App-Template/issues/21) |
+| D5 | `output/html/`: static pyvis/vis.js-style report + Jinja2 UML node/edge panels (using HTML templates), CI-usable exit codes | M | ✅ Done | [#22](https://github.com/ACFHarbinger/Polyglot-App-Template/issues/22) |
 | D6 | `output/app/`: Tauri + React shell, React Flow rendering for small graphs | L | 📋 Pending | [#23](https://github.com/ACFHarbinger/Polyglot-App-Template/issues/23) |
-| D7 | `output/app/`: Cosmograph (cosmos.gl) large-graph rendering + sigma.js fallback, semantic zoom levels (module → file → class/function), per Visual-Graph-Programming's roadmap | L | 📋 Pending | [#24](https://github.com/ACFHarbinger/Polyglot-App-Template/issues/24) |
+| D7 | `output/app/`: Cosmograph (cosmos.gl) large-graph rendering + sigma.js fallback, semantic zoom levels (module → file → class/function), per the developer tools roadmap | L | 📋 Pending | [#24](https://github.com/ACFHarbinger/Polyglot-App-Template/issues/24) |
 | D8 | Plugin registry (`ToolTabBase`-equivalent) + lazy-import discipline for headless mode | M | 📋 Pending | [#25](https://github.com/ACFHarbinger/Polyglot-App-Template/issues/25) |
 | D9 | `input/python/`, `input/typescript/`, `input/kotlin/`, `input/rust/`, `input/go/`, `input/cpp/`: real per-language parsers (start with import/dependency edges only; call graphs and dataflow are stretch) | XL | 📋 Pending | [#26](https://github.com/ACFHarbinger/Polyglot-App-Template/issues/26) |
-| D10 | Reference plugin: generic-ized image/video diff panel ported from Image-Toolkit's `evaluation/` inspector, as a worked example of a repo-specific extension | M | 📋 Pending | [#27](https://github.com/ACFHarbinger/Polyglot-App-Template/issues/27) |
+| D10 | Reference plugin: generic-ized image/video diff panel from an evaluation inspector, as a worked example of a repo-specific extension | M | 📋 Pending | [#27](https://github.com/ACFHarbinger/Polyglot-App-Template/issues/27) |
 | D11 | Wire into root `justfile` (`just dev report`, `just dev app`, `just dev check` for CI) and `.github/workflows/` | S | 📋 Pending | [#28](https://github.com/ACFHarbinger/Polyglot-App-Template/issues/28) |
-| D12 | `dev/README.md` onboarding + editor settings recommendation (from nglab's `code_quality.md` Developer Experience wishlist) | S | 📋 Pending | [#29](https://github.com/ACFHarbinger/Polyglot-App-Template/issues/29) |
+| D12 | `dev/README.md` onboarding + editor settings recommendation (from developer experience recommendations) | S | 📋 Pending | [#29](https://github.com/ACFHarbinger/Polyglot-App-Template/issues/29) |
 
 ## 7. Open questions for implementation time
 

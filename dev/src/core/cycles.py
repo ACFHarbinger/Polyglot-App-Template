@@ -1,7 +1,7 @@
 """Circular-dependency detection via Tarjan's strongly-connected-components
 algorithm.
 
-See docs/moon/roadmaps/developer_tools.md D4 (ported concept from Image-Toolkit's
+See docs/moon/roadmaps/developer_tools.md D4 (ported concept from 's
 ``check_circular_imports.py``, reimplemented against the shared
 :class:`~dev.src.core.model.CodeGraph` instead of a Python-only import map).
 

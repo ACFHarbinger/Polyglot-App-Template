@@ -1,6 +1,6 @@
 # java/
 
-Java module template, built with Maven. Conventions adapted from a real Maven
+Java module template, built with Maven. Conventions based on standard Maven
 multi-module reactor project, simplified to a single-module skeleton to match
 this template's other language modules.
 

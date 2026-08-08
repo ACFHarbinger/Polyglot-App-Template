@@ -2,9 +2,9 @@
 
 Walks a directory tree of `.py` files, AST-parses each one, and emits a
 :class:`~dev.src.core.model.CodeGraph` of module nodes and IMPORT edges.
-Adapted from the AST-walk approach independently built in three of the
-template's source repos (Build-Optimization/WSmart-Route
-`visualize_module_graph.py`, Image-Toolkit `check_circular_imports.py`),
+AST-walk approach for Python import graph parsing.
+template's source repos (
+`visualize_module_graph.py`,  `check_circular_imports.py`),
 consolidated into the dev/src/input/python/ submodule per
 docs/moon/roadmaps/developer_tools.md D9 (Python slice).
 
