@@ -3,7 +3,7 @@ name = "polyglot-app-template"
 version = "0.1.0"
 description = "Root workspace manifest for Polyglot-App-Template. The actual Python module lives in python/ (see python/pyproject.toml)."
 readme = "README.md"
-license = { file = "LICENSE.md" }
+license = { file = "LICENSE" }
 requires-python = ">=3.11"
 authors = [{ name = "ACFHarbinger" }]
 dependencies = []

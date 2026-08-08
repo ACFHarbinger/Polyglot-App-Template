@@ -7,7 +7,7 @@ name = "polyglot-app-template-python"
 version = "0.1.0"
 description = "Python module template for Polyglot-App-Template."
 readme = "README.md"
-license = { file = "../LICENSE.md" }
+license = { file = "../LICENSE" }
 requires-python = ">=3.11"
 authors = [{ name = "ACFHarbinger" }]
 classifiers = [

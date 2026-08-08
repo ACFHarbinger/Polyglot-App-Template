@@ -14,7 +14,7 @@
 </br>
 
 <a href="https://github.com/ACFHarbinger/Polyglot-App-Template/releases"><img alt="Release" src="https://img.shields.io/github/v/release/ACFHarbinger/Polyglot-App-Template?include_prereleases&logo=github&color=blue"></a>
-<a href="LICENSE.md"><img alt="License" src="https://img.shields.io/badge/License-AGPL_v3-blue.svg"></a>
+<a href="LICENSE"><img alt="License" src="https://img.shields.io/badge/License-AGPL_v3-blue.svg"></a>
 <a href="https://github.com/ACFHarbinger/Polyglot-App-Template/issues"><img alt="Open Issues" src="https://img.shields.io/github/issues/ACFHarbinger/Polyglot-App-Template?color=yellow"></a>
 <a href="https://github.com/ACFHarbinger/Polyglot-App-Template/commits/main"><img alt="Last Commit" src="https://img.shields.io/github/last-commit/ACFHarbinger/Polyglot-App-Template?color=blueviolet"></a>
 
@@ -116,9 +116,9 @@ This project is dual-licensed under an open-core model:
 
 - **Open source (free) — GNU AGPL-3.0.** Free to use, modify, and
   distribute for hobbyists, students, researchers, non-profits, and any
-  other use that complies with the [AGPL-3.0](LICENSE.md)'s copyleft and
+  other use that complies with the [AGPL-3.0](LICENSE)'s copyleft and
   network source-disclosure terms.
 - **Commercial (paid).** For proprietary, closed-source, or SaaS use that
   can't comply with the AGPL's obligations, a paid
-  [commercial license](LICENSE.txt) is available — contact ACFHarbinger
+  [commercial license](LICENSE) is available — contact ACFHarbinger
   <afonso.fernandes100@gmail.com> for pricing and terms.
