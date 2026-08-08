@@ -472,3 +472,6 @@ assets/migrations/pre_unified/
 
 # ASP Benchmarks
 data/benchmarks/
+# Python build & cache artifacts
+__pycache__/
+*.egg-info/
