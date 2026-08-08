@@ -1,12 +1,12 @@
 # automation_rules.yaml
 #
 # Behavioral configuration for the sync_backlog / agent_tools automation
-# suite. This file is read by github/scripts/sync_backlog.py at runtime and
+# suite. This file is read by git/scripts/sync_backlog.py at runtime and
 # is NOT interpreted by GitHub itself -- it is our own DSL for how the
 # LLM-driven backlog agent should behave, particularly under ambiguity or
 # conflict. Keep this human-editable; the agent treats it as policy, not code.
 #
-# Adapted from Visual-Graph-Programming's github/config/automation_rules.yaml.
+# Adapted from Visual-Graph-Programming's git/config/automation_rules.yaml.
 
 version: 1
 

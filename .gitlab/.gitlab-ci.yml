@@ -162,7 +162,7 @@ benchmark:
 # ==========================================
 # STAGE: SYNC (agent_sync.yml) -- not portable
 # ==========================================
-# agent_sync.yml orchestrates github/scripts/sync_backlog.py, which talks to
+# agent_sync.yml orchestrates git/scripts/sync_backlog.py, which talks to
 # the GitHub Projects (V2) GraphQL API specifically. GitLab has its own
 # Issue Boards / epics feature with a different, incompatible API -- no
 # drop-in translation exists, and porting the script itself is out of scope

@@ -6,8 +6,8 @@
 # message doesn't exist at pre-commit time. This hook's job is limited to
 # fast, local sanity checks that should run before we even open an editor.
 #
-# Currently: verifies github/config/automation_rules.yaml and
-# github/config/project_labels.json are valid, since a broken config would
+# Currently: verifies git/config/automation_rules.yaml and
+# git/config/project_labels.json are valid, since a broken config would
 # otherwise silently disable all downstream automation.
 
 set -uo pipefail
@@ -29,8 +29,8 @@ import sys
 from pathlib import Path
 
 root = Path(sys.argv[1])
-labels_path = root / "github" / "config" / "project_labels.json"
-rules_path = root / "github" / "config" / "automation_rules.yaml"
+labels_path = root / "git" / "config" / "project_labels.json"
+rules_path = root / "git" / "config" / "automation_rules.yaml"
 
 try:
     if labels_path.exists():

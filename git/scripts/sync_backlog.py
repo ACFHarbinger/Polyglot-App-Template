@@ -5,7 +5,7 @@ reconcile the described work against the current board snapshot, and applies
 the resulting diff via the ``ProjectV2`` GraphQL API using the primitives in
 :mod:`agent_tools`.
 
-Ported from Visual-Graph-Programming's github/scripts/sync_backlog.py, with
+Ported from Visual-Graph-Programming's git/scripts/sync_backlog.py, with
 the source-document paths and project naming generalized for template reuse.
 
 Design goals:
@@ -17,7 +17,7 @@ Design goals:
       diff and touch nothing.
 
 Usage:
-    python github/scripts/sync_backlog.py --repo-owner ACFHarbinger \\
+    python git/scripts/sync_backlog.py --repo-owner ACFHarbinger \\
         --repo-name Polyglot-App-Template --project-id PVT_kwxxxx
 
 Environment:
@@ -43,7 +43,7 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(mess
 logger = logging.getLogger("sync_backlog")
 
 REPO_ROOT = Path(__file__).resolve().parent.parent.parent
-CONFIG_DIR = REPO_ROOT / "github" / "config"
+CONFIG_DIR = REPO_ROOT / "git" / "config"
 
 SYSTEM_PROMPT = """You are a backlog reconciliation agent for a software \
 project's GitHub Project board. You will be given the contents of \

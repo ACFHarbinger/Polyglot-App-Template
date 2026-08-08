@@ -1,5 +1,5 @@
 @echo off
-REM post-commit.bat -- Windows equivalent of github/hooks/post-commit.
+REM post-commit.bat -- Windows equivalent of git/hooks/post-commit.
 REM Verifies the just-made commit references a ticket ID and, if so,
 REM best-effort transitions that ticket's board status. Fails open: always
 REM exits 0, since post-commit cannot un-make a commit that already happened.
@@ -10,7 +10,7 @@ for /f "delims=" %%R in ('git rev-parse --show-toplevel 2^>nul') do set REPO_ROO
 if "%REPO_ROOT%"=="" exit /b 0
 
 set PYTHON_BIN=python
-set CHECK_SCRIPT=%REPO_ROOT%\github\scripts\check_commit_ref.py
+set CHECK_SCRIPT=%REPO_ROOT%\git\scripts\check_commit_ref.py
 set COMMIT_MSG_FILE=%REPO_ROOT%\.git\COMMIT_EDITMSG
 
 if not exist "%CHECK_SCRIPT%" (

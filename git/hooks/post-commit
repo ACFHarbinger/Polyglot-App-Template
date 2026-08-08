@@ -4,7 +4,7 @@
 # if so, best-effort transition that ticket's board status.
 #
 # This file is NOT executed automatically by git -- git only runs hooks
-# from `.git/hooks/`, which is untracked. Run github/hooks/install.sh to
+# from `.git/hooks/`, which is untracked. Run git/hooks/install.sh to
 # symlink this in.
 #
 # Fails open: a non-zero exit here would abort nothing (post-commit cannot
@@ -19,7 +19,7 @@ if [[ -z "${REPO_ROOT}" ]]; then
 fi
 
 PYTHON_BIN="${PYTHON_BIN:-python3}"
-CHECK_SCRIPT="${REPO_ROOT}/github/scripts/check_commit_ref.py"
+CHECK_SCRIPT="${REPO_ROOT}/git/scripts/check_commit_ref.py"
 COMMIT_MSG_FILE="${REPO_ROOT}/.git/COMMIT_EDITMSG"
 
 if [[ ! -f "${CHECK_SCRIPT}" ]]; then

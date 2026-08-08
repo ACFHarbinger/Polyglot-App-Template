@@ -75,7 +75,7 @@ Use **"Use this template"** on GitHub to create a new repository, then delete or
 | `docs/` | MkDocs site, Sphinx API docs, Structurizr C4 diagrams, architecture notes |
 | `env/` | Conda/pip environment definitions |
 | `git/` | `CONTRIBUTING.md` and `codecov.yaml` |
-| `github/` | GitHub Project (V2) automation: `agent_sync.yml`'s scripts, config, and local git hooks |
+| `git/` | GitHub Project (V2) automation: `agent_sync.yml`'s scripts, config, and local git hooks |
 | `docs/moon/` | `ROADMAP.md` and `CHANGELOG.md` |
 | `tools/` | Scripts backing the root `justfile` recipes |
 | `python/`, `typescript/`, `kotlin/`, `java/`, `rust/`, `go/`, `cpp/` | Per-language module skeletons |

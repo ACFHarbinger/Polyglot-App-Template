@@ -13,7 +13,7 @@ this repository's GitHub Project (V2) board. Each function:
 - Is side-effect-isolated: network calls live behind ``GitHubProjectClient``
   so this module can be unit-tested with a fake client.
 
-Ported from Visual-Graph-Programming's github/scripts/agent_tools.py, with
+Ported from Visual-Graph-Programming's git/scripts/agent_tools.py, with
 project-specific naming generalized for template reuse.
 
 Environment:
@@ -92,7 +92,7 @@ class GitHubProjectClient:
 
 
 def _load_json_config(filename: str) -> dict[str, Any]:
-    """Load a JSON config file from ``github/config``.
+    """Load a JSON config file from ``git/config``.
 
     Args:
         filename: Basename of the config file, e.g. ``"project_labels.json"``.

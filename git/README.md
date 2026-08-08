@@ -1,10 +1,7 @@
-# github/
+# git/
 
-Human-browsable automation suite backing `.github/workflows/agent_sync.yml`,
-kept separate from the dot-prefixed `.github/` directory (which GitHub itself
-reads) so the actual logic is easy to find, read, and edit.
-
-Ported from Visual-Graph-Programming's `github/` automation suite.
+Human-browsable automation suite backing `.github/workflows/agent_sync.yml` and,
+the analogous workflows in `.gitlab-ci.yml` and `.gitea/workflows/agent-sync.yml`.
 
 | Directory | Purpose |
 | --- | --- |
@@ -15,19 +12,22 @@ Ported from Visual-Graph-Programming's `github/` automation suite.
 ## Setup
 
 ```bash
-bash github/hooks/install.sh
+bash git/hooks/install.sh
 export PROJECT_ID="PVT_..."      # ProjectV2 node ID, see `gh project view <n> --owner <o> --format json`
-export GITHUB_TOKEN="..."        # token with repo + project scopes
+export GITHUB_TOKEN="..."        # GitHub token with repo + project scopes
+export GITEA_TOKEN="..."         # Gitea token with repo + project scopes
+export GITLAB_TOKEN="..."        # GitLab token with repo + project scopes
+export GEMINI_API_KEY="..."      # Google Gemini API key with project + roadmap scopes
 ```
 
 ## CI
 
-`.github/workflows/agent_sync.yml` runs `github/scripts/sync_backlog.py` on
+`.github/workflows/agent_sync.yml` runs `git/scripts/sync_backlog.py` on
 every push to `docs/moon/ROADMAP.md` or `docs/moon/CHANGELOG.md`, or on demand via
 `workflow_dispatch`. It needs two repository secrets
 (`PROJECT_AUTOMATION_TOKEN`, `GEMINI_API_KEY`) and one repository variable
 (`PROJECT_ID`) configured before it can mutate a live board — until then,
 runs will fail fast rather than silently no-op.
 
-> **TODO (template adoption):** update `github/config/automation_rules.yaml`'s
+> **TODO (template adoption):** update `git/config/automation_rules.yaml`'s
 > `project.owner`/`project.number` to point at your own board.

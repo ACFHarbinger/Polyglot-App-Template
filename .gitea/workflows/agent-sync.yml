@@ -1,7 +1,7 @@
 name: Agent Backlog Sync
 
 # Keeps a GitHub Project (V2) board in sync with docs/moon/ROADMAP.md /
-# docs/moon/CHANGELOG.md by orchestrating github/scripts/sync_backlog.py. Runs on
+# docs/moon/CHANGELOG.md by orchestrating git/scripts/sync_backlog.py. Runs on
 # pushes to main that touch either source-of-truth doc, or on demand via
 # workflow_dispatch for maintainers who want to force a resync without a doc
 # edit.
@@ -44,7 +44,7 @@ jobs:
     steps:
       - name: "Guard: this workflow is GitHub-only"
         run: |
-          echo "::error::Agent Backlog Sync targets the GitHub Projects (v2) GraphQL API and cannot run against a Forgejo/Gitea instance. This workflow is intentionally a no-op here -- see github/scripts/sync_backlog.py."
+          echo "::error::Agent Backlog Sync targets the GitHub Projects (v2) GraphQL API and cannot run against a Forgejo/Gitea instance. This workflow is intentionally a no-op here -- see git/scripts/sync_backlog.py."
           exit 1
 
       - name: Checkout repository
@@ -63,8 +63,8 @@ jobs:
 
       - name: Validate automation config
         run: |
-          python -c "import json,pathlib; json.loads(pathlib.Path('github/config/project_labels.json').read_text())"
-          python -c "import yaml,pathlib; yaml.safe_load(pathlib.Path('github/config/automation_rules.yaml').read_text())"
+          python -c "import json,pathlib; json.loads(pathlib.Path('git/config/project_labels.json').read_text())"
+          python -c "import yaml,pathlib; yaml.safe_load(pathlib.Path('git/config/automation_rules.yaml').read_text())"
 
       - name: Run backlog sync
         env:
@@ -78,7 +78,7 @@ jobs:
           if [ "${{ inputs.dry_run }}" = "true" ]; then
             ARGS="$ARGS --dry-run"
           fi
-          python github/scripts/sync_backlog.py $ARGS
+          python git/scripts/sync_backlog.py $ARGS
 
       - name: Summarize run
         if: always()
