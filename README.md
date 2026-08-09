@@ -122,3 +122,14 @@ This project is dual-licensed under an open-core model:
   can't comply with the AGPL's obligations, a paid
   [commercial license](LICENSE) is available — contact ACFHarbinger
   <afonso.fernandes100@gmail.com> for pricing and terms.
+
+## Web host stacks (`stack/`)
+
+Template-ready **Next.js** (React) and **Nuxt** (Vue) host packages:
+
+| Path | Role |
+| --- | --- |
+| [`stack/next/`](stack/next/) | Next.js config + TypeScript env |
+| [`stack/nuxt/`](stack/nuxt/) | Nuxt 3 app scaffold |
+
+See [`stack/README.md`](stack/README.md).
