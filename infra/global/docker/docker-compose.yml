@@ -34,7 +34,7 @@ services:
 
   app:
     build:
-      context: ../../../..
+      context: ../../..
       dockerfile: infra/global/docker/Dockerfile
     environment:
       DB_HOST: db
