@@ -1,4 +1,4 @@
-# stack/next/
+# website/stack/next/
 
 Next.js configuration and TypeScript environment references for a **React** host app generated from this template.
 
@@ -16,10 +16,10 @@ When scaffolding an App Router package at the repo root (or under `typescript/` 
 
 ```js
 // next.config.js (package root)
-module.exports = require('./stack/next/next.config.js');
+module.exports = require('./website/stack/next/next.config.js');
 ```
 
-3. Point `tsconfig.json` `include` at `stack/next/next-env.d.ts` (or copy a root `next-env.d.ts` that references it).
+3. Point `tsconfig.json` `include` at `website/stack/next/next-env.d.ts` (or copy a root `next-env.d.ts` that references it).
 
 ```bash
 npx next dev

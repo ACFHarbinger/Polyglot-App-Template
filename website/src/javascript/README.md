@@ -1,4 +1,4 @@
-# website/javascript/
+# website/src/javascript/
 
 JavaScript/React module template, built with Vite and tested with Vitest.
 

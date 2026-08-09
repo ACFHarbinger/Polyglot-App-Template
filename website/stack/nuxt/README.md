@@ -1,4 +1,4 @@
-# stack/nuxt/
+# website/stack/nuxt/
 
 Nuxt 3 host package — the **Vue** counterpart to [`../next/`](../next/) (Next.js / React).
 
@@ -12,7 +12,7 @@ Nuxt 3 host package — the **Vue** counterpart to [`../next/`](../next/) (Next.
 ## Usage
 
 ```bash
-cd stack/nuxt
+cd website/stack/nuxt
 npm install
 npm run dev        # http://localhost:3000
 npm run generate   # static output under .output/public
@@ -22,7 +22,7 @@ npm run generate   # static output under .output/public
 
 | Directory | Stack |
 | --- | --- |
-| `stack/next/` | Next.js + React host config |
-| `stack/nuxt/` | Nuxt 3 + Vue host scaffold |
+| `website/stack/next/` | Next.js + React host config |
+| `website/stack/nuxt/` | Nuxt 3 + Vue host scaffold |
 
 Use one primary host per generated app, or compose both as multi-framework demos. Shared libraries (forms, state, islands) can live under a top-level `src/` when the concrete module is scaffolded.

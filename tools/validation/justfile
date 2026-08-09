@@ -12,7 +12,7 @@ typescript:
     cd typescript && npm run lint
 
 javascript:
-    cd website/javascript && npm run lint
+    cd website/src/javascript && npm run lint
 
 kotlin:
     cd kotlin && ./gradlew ktlintCheck

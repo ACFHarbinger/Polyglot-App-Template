@@ -123,13 +123,19 @@ This project is dual-licensed under an open-core model:
   [commercial license](LICENSE) is available — contact ACFHarbinger
   <afonso.fernandes100@gmail.com> for pricing and terms.
 
-## Web host stacks (`stack/`)
+## Web host stacks (`website/stack/`)
 
 Template-ready **Next.js** (React) and **Nuxt** (Vue) host packages:
 
 | Path | Role |
 | --- | --- |
-| [`stack/next/`](stack/next/) | Next.js config + TypeScript env |
-| [`stack/nuxt/`](stack/nuxt/) | Nuxt 3 app scaffold |
+| [`website/stack/next/`](website/stack/next/) | Next.js config + TypeScript env |
+| [`website/stack/nuxt/`](website/stack/nuxt/) | Nuxt 3 app scaffold |
 
-See [`stack/README.md`](stack/README.md).
+See [`website/stack/README.md`](website/stack/README.md).
+
+| Path | Role |
+| --- | --- |
+| [`website/src/`](website/src/) | Site sources (`css/`, `html/`, `javascript/`, `php/`) |
+| [`website/stack/`](website/stack/) | ESLint + Next + Nuxt host packages |
+| [`website/test/`](website/test/) | Shared cypress / integration / unit harness |

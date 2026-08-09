@@ -12,7 +12,7 @@ typescript:
     cd typescript && npm test
 
 javascript:
-    cd website/javascript && npm test
+    cd website/src/javascript && npm test
 
 kotlin:
     cd kotlin && ./gradlew test

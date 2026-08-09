@@ -12,7 +12,7 @@ typescript:
     cd typescript && npm run build
 
 javascript:
-    cd website/javascript && npm run build
+    cd website/src/javascript && npm run build
 
 kotlin:
     cd kotlin && ./gradlew build
