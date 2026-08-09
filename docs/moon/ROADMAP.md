@@ -25,7 +25,7 @@ Status markers: ✅ Done · 🚧 In Progress · 📋 Pending
 | T3 | `docs/` documentation portal: MkDocs, Sphinx, Structurizr, ADRs | M | ✅ Done |
 | T4 | `moon/` roadmap and changelog | S | ✅ Done |
 | T5 | `infra/global/docker/` infrastructure: Dockerfile, Compose stack | S | ✅ Done |
-| T16 | `infra/{k8s,helm,terraform,ansible}/` — additional infra-as-code scaffolding | M | ✅ Done |
+| T16 | `infra/global/{k8s,helm,terraform,ansible}/` — additional infra-as-code scaffolding | M | ✅ Done |
 | T6 | `.agent/` LLM coding-agent scaffolding | M | ✅ Done |
 | T7 | `justfile` + `tools/` command runner | M | 📋 Pending |
 | T8 | `desktop/` per-OS packaging scripts | S | 📋 Pending |
