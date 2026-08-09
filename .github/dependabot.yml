@@ -92,7 +92,7 @@ updates:
 
   # Docker
   - package-ecosystem: "docker"
-    directory: "/infra/docker"
+    directory: "/infra/global/docker"
     schedule:
       interval: "weekly"
     open-pull-requests-limit: 3
@@ -104,7 +104,7 @@ updates:
 
   # Terraform providers/modules
   - package-ecosystem: "terraform"
-    directory: "/infra/terraform"
+    directory: "/infra/global/terraform"
     schedule:
       interval: "weekly"
     open-pull-requests-limit: 3

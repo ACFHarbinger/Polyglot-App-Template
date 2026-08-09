@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: app
-          # TODO: point at your real registry once infra/docker/Dockerfile is published there.
+          # TODO: point at your real registry once infra/global/docker/Dockerfile is published there.
           image: polyglot-app-template:latest
           ports:
             - containerPort: 8000

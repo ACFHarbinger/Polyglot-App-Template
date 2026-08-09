@@ -6,7 +6,7 @@ cluster, etc.). No provider is wired up yet — this is a starting point, not
 a real stack.
 
 ```bash
-cd infra/terraform
+cd infra/global/terraform
 terraform init
 terraform plan -var-file=environments/dev.tfvars
 terraform apply -var-file=environments/dev.tfvars

@@ -27,7 +27,7 @@ just lint python
 Open the repo in VS Code and choose "Reopen in Container" — see [`.devcontainer/devcontainer.json`](../.devcontainer/devcontainer.json). Or run the full stack with:
 
 ```bash
-docker compose -f infra/docker/docker-compose.yml up
+docker compose -f infra/global/docker/docker-compose.yml up
 ```
 
 ## Common Tasks

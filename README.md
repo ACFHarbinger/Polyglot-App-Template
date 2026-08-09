@@ -71,7 +71,7 @@ Use **"Use this template"** on GitHub to create a new repository, then delete or
 | `.devcontainer/` | VS Code Dev Container definition |
 | `.github/` | Issue/PR templates, Dependabot config, GitHub Actions workflows |
 | `desktop/` | Per-OS packaging and install scripts (Linux, macOS, Windows) |
-| `infra/` | `docker/` (Dockerfiles, Compose stacks), `k8s/` (Kustomize manifests), `helm/` (Helm chart), `terraform/` (IaC), `ansible/` (config management) |
+| `infra/` | `global/` (docker, k8s, helm, terraform, ansible), `cloud/`, `private/`, `server/` (nginx, Envoy) |
 | `docs/` | MkDocs site, Sphinx API docs, Structurizr C4 diagrams, architecture notes |
 | `env/` | Conda/pip environment definitions |
 | `git/` | `CONTRIBUTING.md` and `codecov.yaml` |
