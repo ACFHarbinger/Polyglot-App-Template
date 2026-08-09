@@ -1,11 +1,12 @@
 # website/test/
 
-Test harness for website packages, mirroring the github-pages layout.
+Test harness for website packages, mirroring the github-pages layout (simplified unit tree).
 
 | Path | Role |
 | --- | --- |
 | `vitest.setup.ts` | Global Vitest setup (MSW + in-memory `localStorage`) |
-| `unit/` | Fast unit tests (`components/`, `redux/`, `simulations/`, `utils/`) |
+| `unit/components/` | Component unit tests (example `smoke.test.ts`) |
+| `unit/utils/` | Utility unit tests |
 | `integration/` | Multi-module tests + `mocks/` (MSW handlers/server) |
 | `cypress/` | Browser e2e + smoke (`e2e/`, `smoke/`, `cypress.config.js`) |
 
