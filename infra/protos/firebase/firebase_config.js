@@ -1,4 +1,4 @@
-// libraries/app/firebase/firebase_config.js
+// infra/protos/firebase/firebase_config.js
 // Firebase configuration and modular SDK initialization example.
 
 import { initializeApp } from "firebase/app";
